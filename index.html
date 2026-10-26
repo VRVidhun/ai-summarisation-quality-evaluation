@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPSTONE 72 — AI Summarisation Quality Evaluation</title>
+  <meta name="description" content="Academic-grade AI Summarisation Quality Evaluation platform benchmarking ChatGPT, Claude, Gemini, and NotebookLM across 10 domains with ROUGE metrics, manual rubrics, and verification audits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN for interactive visual analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark-theme">
+  <!-- Header & Navigation -->
+  <header class="app-header" id="main-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="badge capstone-badge">CAPSTONE 72</span>
+          <h1>AI Summarisation Quality Evaluation</h1>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <div class="weightage-badge">
+          <span class="dot"></span>
+          <span>100 Marks Capstone Project</span>
+        </div>
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" id="navigation-tabs" role="tablist">
+      <button class="nav-tab active" data-tab="tab-overview" id="nav-overview" role="tab">
+        <span class="nav-icon">📊</span> Overview & Presentation
+      </button>
+      <button class="nav-tab" data-tab="tab-comparator" id="nav-comparator" role="tab">
+        <span class="nav-icon">🔍</span> Multi-Model Comparator
+      </button>
+      <button class="nav-tab" data-tab="tab-metrics" id="nav-metrics" role="tab">
+        <span class="nav-icon">📈</span> Metrics & ROUGE Engine
+      </button>
+      <button class="nav-tab" data-tab="tab-omissions" id="nav-omissions" role="tab">
+        <span class="nav-icon">⚠️</span> Omissions & Error Audit
+      </button>
+      <button class="nav-tab" data-tab="tab-prompts" id="nav-prompts" role="tab">
+        <span class="nav-icon">💡</span> Prompt Engineering Lab
+      </button>
+      <button class="nav-tab" data-tab="tab-verification" id="nav-verification" role="tab">
+        <span class="nav-icon">🛡️</span> Verification Matrix
+      </button>
+      <button class="nav-tab" data-tab="tab-exports" id="nav-exports" role="tab">
+        <span class="nav-icon">📥</span> Downloads & Reports
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+
+    <!-- TAB 1: OVERVIEW & PRESENTATION -->
+    <section id="tab-overview" class="tab-content active" role="tabpanel">
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-content">
+          <div class="hero-pill">PROJECT RESEARCH QUESTION</div>
+          <h2 class="hero-title">How good are AI summaries and how can we measure them?</h2>
+          <p class="hero-subtitle">
+            A comprehensive, multi-methodological evaluation benchmarking <strong>ChatGPT (GPT-4o)</strong>, <strong>Claude 3.5 Sonnet</strong>, <strong>Google Gemini</strong>, and <strong>Google NotebookLM</strong> across 10 complex domain articles using automated ROUGE metrics, anchored 5-dimension manual rubrics, omission taxonomies, and claim-level verification audits.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="check">✓</span> 1. AI Foundations</div>
+          <div class="skill-tag"><span class="check">✓</span> 2. Prompt Engineering</div>
+          <div class="skill-tag"><span class="check">✓</span> 3. Content Writing</div>
+          <div class="skill-tag"><span class="check">✓</span> 4. Research & Verification</div>
+          <div class="skill-tag"><span class="check">✓</span> 5. Automation & Python</div>
+          <div class="skill-tag"><span class="check">✓</span> 6. Responsible AI</div>
+        </div>
+      </div>
+
+      <!-- Quick KPI Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Articles Evaluated</div>
+          <div class="kpi-value" id="kpi-articles">10</div>
+          <div class="kpi-sub">Across 10 Distinct Domains</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">AI Platforms Benchmarked</div>
+          <div class="kpi-value" id="kpi-models">4</div>
+          <div class="kpi-sub">ChatGPT, Claude, Gemini, NotebookLM</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Prompt Engineering Gain</div>
+          <div class="kpi-value highlight-green">+119.1%</div>
+          <div class="kpi-sub">ROUGE-1 F1 Boost (Before vs After)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Top Manual Score</div>
+          <div class="kpi-value highlight-purple">4.88 / 5.0</div>
+          <div class="kpi-sub">Claude 3.5 Sonnet (Nuance Leader)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Hallucination Rate</div>
+          <div class="kpi-value highlight-cyan">0.0%</div>
+          <div class="kpi-sub">NotebookLM & Engineered Prompts</div>
+        </div>
+      </div>
+
+      <!-- Interactive Slide Deck Presentation Mode -->
+      <div class="section-card presentation-card">
+        <div class="presentation-header">
+          <div class="pres-title-wrap">
+            <span class="badge pres-badge">ORAL DEFENSE MODE</span>
+            <h3>Capstone Interactive Presentation Deck</h3>
+          </div>
+          <div class="slide-controls">
+            <button class="btn btn-outline" id="prev-slide-btn" title="Previous Slide">← Previous</button>
+            <span class="slide-counter" id="slide-indicator">Slide 1 of 8</span>
+            <button class="btn btn-primary" id="next-slide-btn" title="Next Slide">Next →</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport" id="slide-container">
+          <!-- Dynamic Slide Content Injected by JS -->
+        </div>
+
+        <div class="slide-footer">
+          <div class="speaker-notes-toggle">
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-speaker-notes" checked>
+              <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Show Speaker Defense Notes</span>
+          </div>
+          <div class="slide-dots" id="slide-dots-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: MULTI-MODEL COMPARATOR -->
+    <section id="tab-comparator" class="tab-content" role="tabpanel">
+      <div class="section-card">
+        <div class="comparator-controls">
+          <div class="control-group">
+            <label for="article-select" class="control-label">Select Article to Inspect:</label>
+            <select id="article-select" class="form-select">
+              <!-- Options populated dynamically -->
+            </select>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Article Metadata:</label>
+            <div class="meta-pills" id="article-meta-pills"></div>
+          </div>
+        </div>
+
+        <!-- Full Source Article Collapsible -->
+        <div class="accordion-box">
+          <button class="accordion-header" id="accordion-source-btn">
+            <span>📄 Full Source Article (<span id="source-word-count">0</span> words)</span>
+            <span class="accordion-arrow">▼</span>
+          </button>
+          <div class="accordion-body collapsed" id="accordion-source-body">
+            <div class="article-full-text" id="source-full-content"></div>
+          </div>
+        </div>
+
+        <!-- Side-by-Side Model Summary Columns -->
+        <div class="comparator-grid">
+          <!-- Column 1: Human Gold Standard -->
+          <div class="summary-col gold-col">
+            <div class="col-header">
+              <div class="col-title">
+                <span class="model-badge gold">Human Expert</span>
+                <h4>Gold Standard Reference</h4>
+              </div>
+              <span class="word-badge" id="gold-words">0 words</span>
+            </div>
+            <div class="summary-body" id="gold-summary-text"></div>
+            <div class="col-footer">
+              <span class="footer-label">Key Ground-Truth Anchors Retained:</span>
+              <ul class="key-facts-list" id="gold-facts-list"></ul>
+            </div>
+          </div>
+
+          <!-- Column 2: ChatGPT (GPT-4o) -->
+          <div class="summary-col">
+            <div class="col-header">
+              <div class="col-title">
+                <span class="model-badge chatgpt">ChatGPT (GPT-4o)</span>
+                <h4>Chain-of-Density Synthesis</h4>
+              </div>
+              <span class="word-badge" id="chatgpt-words">0 words</span>
+            </div>
+            <div class="summary-body" id="chatgpt-summary-text"></div>
+            <div class="col-footer">
+              <div class="metric-mini-bar" id="chatgpt-metrics"></div>
+            </div>
+          </div>
+
+          <!-- Column 3: Claude 3.5 Sonnet -->
+          <div class="summary-col">
+            <div class="col-header">
+              <div class="col-title">
+                <span class="model-badge claude">Claude 3.5 Sonnet</span>
+                <h4>Academic & Nuance Model</h4>
+              </div>
+              <span class="word-badge" id="claude-words">0 words</span>
+            </div>
+            <div class="summary-body" id="claude-summary-text"></div>
+            <div class="col-footer">
+              <div class="metric-mini-bar" id="claude-metrics"></div>
+            </div>
+          </div>
+
+          <!-- Column 4: Google Gemini -->
+          <div class="summary-col">
+            <div class="col-header">
+              <div class="col-title">
+                <span class="model-badge gemini">Google Gemini</span>
+                <h4>Structured Executive Summary</h4>
+              </div>
+              <span class="word-badge" id="gemini-words">0 words</span>
+            </div>
+            <div class="summary-body" id="gemini-summary-text"></div>
+            <div class="col-footer">
+              <div class="metric-mini-bar" id="gemini-metrics"></div>
+            </div>
+          </div>
+
+          <!-- Column 5: Google NotebookLM -->
+          <div class="summary-col">
+            <div class="col-header">
+              <div class="col-title">
+                <span class="model-badge notebooklm">NotebookLM</span>
+                <h4>Source-Grounded RAG</h4>
+              </div>
+              <span class="word-badge" id="notebooklm-words">0 words</span>
+            </div>
+            <div class="summary-body" id="notebooklm-summary-text"></div>
+            <div class="col-footer">
+              <div class="metric-mini-bar" id="notebooklm-metrics"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before/After Baseline Comparison Banner for Selected Article -->
+        <div class="before-after-box" id="article-before-after-box">
+          <div class="ba-header">
+            <h4>💡 Prompt Engineering Shift for This Article (Naive Zero-Shot vs Chain-of-Density)</h4>
+            <span class="badge ba-badge">+119.1% ROUGE-1 Overlap Boost</span>
+          </div>
+          <div class="ba-content-grid">
+            <div class="ba-card before">
+              <div class="ba-label">❌ Naive Prompt Output (Before):</div>
+              <div class="ba-text" id="ba-before-text"></div>
+              <div class="ba-note">Deficit: Loose approximations ("around 55%"), dropped dose tiers, omitted DSMB adjudication.</div>
+            </div>
+            <div class="ba-card after">
+              <div class="ba-label">✓ Engineered Prompt Output (After):</div>
+              <div class="ba-text" id="ba-after-text"></div>
+              <div class="ba-note">Achievement: 100% exact statistics, negative dose cohorts included, clinical adjudication preserved.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 3: METRICS & ROUGE ENGINE -->
+    <section id="tab-metrics" class="tab-content" role="tabpanel">
+      <div class="metrics-dashboard">
+        <!-- Visual Charts Grid -->
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>ROUGE Lexical Overlap Benchmarks</h3>
+              <span class="chart-tag">ROUGE-1, ROUGE-2, ROUGE-L F1 Scores</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="rougeBarChart"></canvas>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>5-Dimension Manual Evaluation Radar</h3>
+              <span class="chart-tag">Faithfulness, Coverage, Conciseness, Coherence, Attribution</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="radarChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compression vs Word Count Chart -->
+        <div class="chart-card full-width-chart">
+          <div class="chart-header">
+            <h3>Compression Efficiency vs Average Summary Length</h3>
+            <span class="chart-tag">Lower Compression % = Higher Text Condensation</span>
+          </div>
+          <div class="chart-wrapper horizontal-bar">
+            <canvas id="compressionChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Filterable Scores Table -->
+        <div class="section-card">
+          <div class="table-header-row">
+            <h3>Comprehensive Evaluation Scores Matrix (All 10 Articles)</h3>
+            <div class="table-actions">
+              <input type="text" id="score-table-search" placeholder="Search article or model..." class="search-input">
+              <select id="score-model-filter" class="form-select filter-select">
+                <option value="ALL">All Models</option>
+                <option value="ChatGPT">ChatGPT</option>
+                <option value="Claude">Claude</option>
+                <option value="Gemini">Gemini</option>
+                <option value="NotebookLM">NotebookLM</option>
+                <option value="Baseline_Before">Baseline (Before)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table" id="manual-scores-table">
+              <thead>
+                <tr>
+                  <th>Article ID</th>
+                  <th>Model</th>
+                  <th>Faithfulness (1-5)</th>
+                  <th>Coverage (1-5)</th>
+                  <th>Conciseness (1-5)</th>
+                  <th>Coherence (1-5)</th>
+                  <th>Attribution (1-5)</th>
+                  <th>Composite Score</th>
+                  <th>Evaluator Commentary</th>
+                </tr>
+              </thead>
+              <tbody id="scores-table-body">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 4: OMISSIONS & ERROR AUDIT -->
+    <section id="tab-omissions" class="tab-content" role="tabpanel">
+      <div class="section-card">
+        <div class="audit-intro">
+          <h2>Taxonomy of AI Summarization Errors & Omissions</h2>
+          <p>
+            An AI summary is defined as much by what it leaves out as what it includes. Our research categorizes omissions into <strong>Critical Omissions</strong> (altering medical safety, legal compliance, or causality) and <strong>Minor Omissions</strong> (contextual details, secondary dates, and non-essential figures).
+          </p>
+        </div>
+
+        <!-- Severity Filter Controls -->
+        <div class="filter-pills-row">
+          <button class="filter-pill active" data-severity="ALL">All Omissions (14)</button>
+          <button class="filter-pill danger" data-severity="High">Critical / High Severity (3)</button>
+          <button class="filter-pill warning" data-severity="Medium">Medium Severity (2)</button>
+          <button class="filter-pill info" data-severity="Low">Minor / Low Severity (9)</button>
+        </div>
+
+        <!-- Omission Cards Grid -->
+        <div class="omissions-grid" id="omissions-container">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Key Takeaway Box -->
+        <div class="takeaway-box">
+          <div class="takeaway-icon">💡</div>
+          <div class="takeaway-text">
+            <strong>The "Positive Reporting Bias" Law of AI Summarization:</strong>
+            When LLMs are not strictly constrained to preserve negative findings, they suffer from an inherent positivity bias. They prioritize breakthrough metrics (e.g., 55% LDL-C drop) while systematically dropping adverse event context (e.g., patient heart attacks) or technical chokepoints (e.g., 1,150°C ceramic sintering micro-cracking).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: PROMPT ENGINEERING LAB -->
+    <section id="tab-prompts" class="tab-content" role="tabpanel">
+      <div class="section-card">
+        <div class="lab-header">
+          <h2>Prompt Engineering Repository & Comparative Lab</h2>
+          <p>
+            Inspect the exact prompts used to guide each AI platform, examine design rationales, and test how prompt changes alter summary quality.
+          </p>
+        </div>
+
+        <!-- Prompt Cards Accordion -->
+        <div class="prompt-cards-list" id="prompts-list-container">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Interactive Playground Simulator -->
+        <div class="playground-box">
+          <div class="playground-header">
+            <h3>🔬 Interactive Prompt Engineering Simulator</h3>
+            <span class="badge play-badge">Simulated Output Engine</span>
+          </div>
+          <p class="playground-desc">
+            Select a prompt strategy to simulate how the model rewrites a scientific passage from naive prose into high-density synthesis:
+          </p>
+          <div class="playground-controls">
+            <button class="btn btn-outline prompt-sim-btn active" data-sim="naive">1. Naive Zero-Shot</button>
+            <button class="btn btn-outline prompt-sim-btn" data-sim="structured">2. Structured Constraints</button>
+            <button class="btn btn-outline prompt-sim-btn" data-sim="cod">3. Chain-of-Density (Iterative)</button>
+            <button class="btn btn-outline prompt-sim-btn" data-sim="rag">4. Source-Grounded (RAG)</button>
+          </div>
+          <div class="sim-output-box">
+            <div class="sim-header">
+              <span class="sim-title" id="sim-strategy-title">Strategy: Naive Zero-Shot</span>
+              <span class="sim-badge" id="sim-rouge-badge">ROUGE-1: 0.3127 | Density: Low</span>
+            </div>
+            <div class="sim-text" id="sim-text-content"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 6: VERIFICATION MATRIX -->
+    <section id="tab-verification" class="tab-content" role="tabpanel">
+      <div class="section-card">
+        <div class="verification-intro">
+          <h2>Claim-by-Claim Ground Truth Verification Matrix</h2>
+          <p>
+            Every factual assertion extracted from candidate AI summaries was audited directly against the source text to ensure zero hallucinations, correct attribution, and accurate numerical thresholds.
+          </p>
+          <div class="verification-stats">
+            <span class="stat-pill success">12 Claims Audited</span>
+            <span class="stat-pill success">ChatGPT: 100% Verified</span>
+            <span class="stat-pill success">Claude: 100% Verified</span>
+            <span class="stat-pill success">NotebookLM: 100% Verified</span>
+            <span class="stat-pill warning">Gemini: 91.7% Verified (1 Soft Rounding)</span>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table verification-table" id="claims-table">
+            <thead>
+              <tr>
+                <th>Claim ID</th>
+                <th>Domain</th>
+                <th>Core Factual Assertion</th>
+                <th>Original Source Evidence</th>
+                <th>ChatGPT</th>
+                <th>Claude</th>
+                <th>Gemini</th>
+                <th>NotebookLM</th>
+                <th>Audit Notes</th>
+              </tr>
+            </thead>
+            <tbody id="claims-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 7: DOWNLOADS & REPORTS -->
+    <section id="tab-exports" class="tab-content" role="tabpanel">
+      <div class="section-card">
+        <div class="export-header">
+          <h2>Capstone Deliverables & Export Center</h2>
+          <p>
+            Download complete datasets formatted for Google Sheets, executable Google Colab Jupyter Notebooks, raw JSON payloads, and academic markdown reports.
+          </p>
+        </div>
+
+        <div class="downloads-grid">
+          <!-- Colab Notebook -->
+          <div class="download-card highlight-card">
+            <div class="dl-icon">🪐</div>
+            <div class="dl-content">
+              <h4>Google Colab Notebook (.ipynb)</h4>
+              <p>Fully executable Jupyter Notebook with ROUGE-1/2/L calculation scripts, pandas dataframes, and matplotlib charts.</p>
+              <a href="colab/AI_Summarisation_Evaluation_Colab.ipynb" download class="btn btn-primary dl-btn">
+                Download .ipynb Notebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Academic Final Report -->
+          <div class="download-card">
+            <div class="dl-icon">📘</div>
+            <div class="dl-content">
+              <h4>Capstone Final Report (.md)</h4>
+              <p>Academic-grade 20+ page evaluation report covering methodologies, skill mappings, benchmark tables, and conclusions.</p>
+              <a href="docs/CAPSTONE_72_FINAL_REPORT.md" download class="btn btn-outline dl-btn">
+                Download Capstone Report
+              </a>
+            </div>
+          </div>
+
+          <!-- Prompt Library -->
+          <div class="download-card">
+            <div class="dl-icon">💡</div>
+            <div class="dl-content">
+              <h4>Prompt Engineering Guide (.md)</h4>
+              <p>Complete repository of all 5 prompt templates, design rationales, negative constraints, and parameters.</p>
+              <a href="docs/PROMPT_LIBRARY.md" download class="btn btn-outline dl-btn">
+                Download Prompt Library
+              </a>
+            </div>
+          </div>
+
+          <!-- Verification Matrix Report -->
+          <div class="download-card">
+            <div class="dl-icon">🛡️</div>
+            <div class="dl-content">
+              <h4>Verification Audit Report (.md)</h4>
+              <p>Claim-by-claim ground truth fact audit detailing evidence chains and hallucination checks across all 10 articles.</p>
+              <a href="docs/VERIFICATION_REPORT.md" download class="btn btn-outline dl-btn">
+                Download Verification Report
+              </a>
+            </div>
+          </div>
+
+          <!-- Before / After Analysis -->
+          <div class="download-card">
+            <div class="dl-icon">⚖️</div>
+            <div class="dl-content">
+              <h4>Before & After Analysis (.md)</h4>
+              <p>Controlled prompt engineering ablation study documenting the +119% ROUGE gain from naive zero-shot to Chain-of-Density.</p>
+              <a href="docs/BEFORE_AFTER_ANALYSIS.md" download class="btn btn-outline dl-btn">
+                Download Before/After Analysis
+              </a>
+            </div>
+          </div>
+
+          <!-- Presentation Transcript -->
+          <div class="download-card">
+            <div class="dl-icon">🎙️</div>
+            <div class="dl-content">
+              <h4>Presentation Script (.md)</h4>
+              <p>Slide-by-slide speaker defense notes and oral presentation transcript for the 100-mark evaluation committee.</p>
+              <a href="docs/PRESENTATION_TRANSCRIPT.md" download class="btn btn-outline dl-btn">
+                Download Presentation Script
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Sheets / CSV Downloads -->
+        <div class="csv-section">
+          <h3>Google Sheets / Excel CSV Exports (Raw Structured Datasets)</h3>
+          <div class="csv-buttons-grid">
+            <a href="csv/01_article_list.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 01_article_list.csv (10 Articles Metadata)
+            </a>
+            <a href="csv/02_all_summaries.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 02_all_summaries.csv (Human & AI Summaries)
+            </a>
+            <a href="csv/03_manual_scores.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 03_manual_scores.csv (5-Dimension Rubrics)
+            </a>
+            <a href="csv/04_rouge_evaluation.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 04_rouge_evaluation.csv (ROUGE-1/2/L Scores)
+            </a>
+            <a href="csv/05_omissions_analysis.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 05_omissions_analysis.csv (Taxonomy Audit)
+            </a>
+            <a href="csv/06_verification_matrix.csv" download class="csv-btn">
+              <span class="file-icon">📊</span> 06_verification_matrix.csv (Claim Verification)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>CAPSTONE 72 — AI Summarisation Quality Evaluation</strong>
+        <span>100 Marks Capstone Final Submission • Free Tier Tools Benchmarked</span>
+      </div>
+      <div class="footer-right">
+        <span>Powered by ChatGPT (GPT-4o), Claude 3.5 Sonnet, Gemini, NotebookLM, Google Colab & Python</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

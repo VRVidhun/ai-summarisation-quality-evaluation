@@ -1,0 +1,432 @@
+[
+  {
+    "article_id": "ART-01",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.6,
+    "conciseness": 4.7,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Highly fluent; captured all 4 dose tiers and 180-day follow-up. Accurately noted unrelated MI."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.9,
+    "conciseness": 4.8,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Gold-standard quality. Captured exact sample sizes (n=14, n=4), DSMB adjudication, and germline caveat."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "Gemini",
+    "faithfulness": 4.7,
+    "coverage": 4.2,
+    "conciseness": 4.6,
+    "coherence": 4.7,
+    "attribution": 4.5,
+    "notes": "Good summary but omitted the 0.1 and 0.3 mg/kg dose tiers and germline biodistribution caveat."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.4,
+    "coherence": 4.5,
+    "attribution": 4.9,
+    "notes": "Direct source-grounded layout; structured bullet style. Very faithful to exact confidence numbers."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "Baseline_Before",
+    "faithfulness": 4.2,
+    "coverage": 3.4,
+    "conciseness": 3.8,
+    "coherence": 4.2,
+    "attribution": 3.8,
+    "notes": "Vague on numbers ('over 80%', 'drop significantly'); omitted dose cohorts and off-target 124 loci check."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.6,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Thorough coverage of FLOP threshold (10^25), fine percentages (7% and 3%), and phased timeline."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.9,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Precise legal terminology (Title VIIIa, graduated schedule, systemic threat taxonomy). Flawless."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "Gemini",
+    "faithfulness": 4.7,
+    "coverage": 4.3,
+    "conciseness": 4.7,
+    "coherence": 4.6,
+    "attribution": 4.6,
+    "notes": "Concise; omitted the misleading information fine tier (\u20ac7.5M/1.5%) and copyright summary nuances."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Clean legal summary. Retained exact statutory fine figures and graduated timeline breakdown."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "Baseline_Before",
+    "faithfulness": 4.3,
+    "coverage": 3.5,
+    "conciseness": 3.9,
+    "coherence": 4.3,
+    "attribution": 3.9,
+    "notes": "Missed standard GPAI obligations, 3% fine tier, and graduated 6-36 month enforcement schedule."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.8,
+    "attribution": 4.8,
+    "notes": "Accurate NASICON formula, 220 Wh/kg, 1,500 cycles, 310\u00b0C ARC test, and 1,150\u00b0C sintering caveat."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.9,
+    "conciseness": 4.9,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Exceptionally detailed materials science summary. Retained all chemical formulas and ionic conductivity."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "Gemini",
+    "faithfulness": 4.7,
+    "coverage": 4.3,
+    "conciseness": 4.8,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "High clarity; omitted exact NASICON chemical formula and specific ionic conductivity value."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Extremely well-grounded; structured into materials, performance, safety, and bottlenecks."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "Baseline_Before",
+    "faithfulness": 4.4,
+    "coverage": 3.6,
+    "conciseness": 3.7,
+    "coherence": 4.1,
+    "attribution": 3.7,
+    "notes": "Lacks chemical specifics (NASICON, Prussian blue, TiO2); rounded temperatures loosely."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.8,
+    "attribution": 4.8,
+    "notes": "Strong explanation of front-end vs packaging chokepoint. Captured 92% concentration and 2028 delay."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.9,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Superb geopolitical and technical synthesis. Retained HBM3e, CoWoS, 67k labor shortage, and 4.5x cost."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.3,
+    "conciseness": 4.8,
+    "coherence": 4.6,
+    "attribution": 4.5,
+    "notes": "Clear flow; condensed NAPMP details and omitted the EU CHIPS Act funding comparison (\u20ac43B)."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.6,
+    "coherence": 4.6,
+    "attribution": 4.8,
+    "notes": "Structured fact extraction. Emphasized trans-Pacific round-trip shipment vulnerability clearly."
+  },
+  {
+    "article_id": "ART-05",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.6,
+    "conciseness": 4.7,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Clear timeline and biological surprise. Included Taxus baccata and mastodon range expansion."
+  },
+  {
+    "article_id": "ART-05",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.9,
+    "conciseness": 4.8,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Deep ecological synthesis. Accurately highlighted individual species re-assortment concept."
+  },
+  {
+    "article_id": "ART-05",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.3,
+    "conciseness": 4.7,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "Succinct and accurate; omitted sample count (41) and specific shotgun metagenomic protocol details."
+  },
+  {
+    "article_id": "ART-05",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Meticulous grounding. Accurately noted comparison to previous 1.2M Siberian mammoth tooth record."
+  },
+  {
+    "article_id": "ART-06",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.6,
+    "conciseness": 4.7,
+    "coherence": 4.8,
+    "attribution": 4.8,
+    "notes": "Explains Shor's algorithm, HNDL threat, FIPS standards, and key size expansion (1,184 vs 256 bytes)."
+  },
+  {
+    "article_id": "ART-06",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.9,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Superior cryptographic taxonomy (Module-LWE, packet fragmentation, HSM hardware barriers)."
+  },
+  {
+    "article_id": "ART-06",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.2,
+    "conciseness": 4.8,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "Good overview; omitted the fourth upcoming standard FIPS 206 (FN-DSA) and discrete log context."
+  },
+  {
+    "article_id": "ART-06",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.8,
+    "notes": "Accurately extracted the four FIPS standards and specific key sizes without hallucination."
+  },
+  {
+    "article_id": "ART-07",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Captures 76.4% prevalence, 48s vs 9.4min asymmetry, $164 loss, and FTC $50,120 civil penalty."
+  },
+  {
+    "article_id": "ART-07",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.8,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Rigorous behavioral economics summary; captured Section 5 FTC Act and 3.8x cancellation reluctance."
+  },
+  {
+    "article_id": "ART-07",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.3,
+    "conciseness": 4.7,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "Impactful; omitted the 2,400 participant sample size and the specific 3.8x behavioral metric."
+  },
+  {
+    "article_id": "ART-07",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Direct structured summary of empirical metrics, consumer loss, and FTC enforcement mechanisms."
+  },
+  {
+    "article_id": "ART-08",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.8,
+    "attribution": 4.8,
+    "notes": "Explains high-redshift anomaly, JADES-GS-z14-0, Population III top-heavy IMF, and Lambda-CDM tension."
+  },
+  {
+    "article_id": "ART-08",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.9,
+    "conciseness": 4.9,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Masterful cosmological explanation. Accurately balanced astrophysics vs cosmological hypotheses."
+  },
+  {
+    "article_id": "ART-08",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.2,
+    "conciseness": 4.7,
+    "coherence": 4.6,
+    "attribution": 4.6,
+    "notes": "Clear dilemma framing; omitted specific NIRCam/NIRSpec instrument mentions and CEERS survey name."
+  },
+  {
+    "article_id": "ART-08",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Clean conceptual split between empirical anomaly, conflict, solutions, and ongoing spectroscopy."
+  },
+  {
+    "article_id": "ART-09",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Covers 67% Suez drop, 10-14 days extra, 237% spot rate surge, 35% fuel spike, and 13.5M ton CO2."
+  },
+  {
+    "article_id": "ART-09",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.8,
+    "conciseness": 4.8,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Comprehensive logistics review. Named Operation Prosperity Guardian and Drewry container index."
+  },
+  {
+    "article_id": "ART-09",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.3,
+    "conciseness": 4.7,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "Strong economic summary; omitted the specific 3,500-4,000 nautical mile range and carrier names."
+  },
+  {
+    "article_id": "ART-09",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.6,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Exact data points extracted faithfully across chokepoint, logistics, finance, and emissions."
+  },
+  {
+    "article_id": "ART-10",
+    "model": "ChatGPT",
+    "faithfulness": 4.8,
+    "coverage": 4.7,
+    "conciseness": 4.7,
+    "coherence": 4.9,
+    "attribution": 4.8,
+    "notes": "Captured the 3 cohorts, 17.3% exam drop, 68% copy-paste-skim habit, and illusion of competence."
+  },
+  {
+    "article_id": "ART-10",
+    "model": "Claude",
+    "faithfulness": 4.9,
+    "coverage": 4.9,
+    "conciseness": 4.8,
+    "coherence": 4.9,
+    "attribution": 4.9,
+    "notes": "Profound cognitive psychology summary. Emphasized active retrieval vs passive offloading clearly."
+  },
+  {
+    "article_id": "ART-10",
+    "model": "Gemini",
+    "faithfulness": 4.6,
+    "coverage": 4.4,
+    "conciseness": 4.7,
+    "coherence": 4.7,
+    "attribution": 4.6,
+    "notes": "Clear narrative; omitted the specific 14-week duration and university count (four institutions)."
+  },
+  {
+    "article_id": "ART-10",
+    "model": "NotebookLM",
+    "faithfulness": 4.9,
+    "coverage": 4.7,
+    "conciseness": 4.5,
+    "coherence": 4.6,
+    "attribution": 4.9,
+    "notes": "Structured contrast between weekly coursework grades and proctored exam performance drop."
+  }
+]

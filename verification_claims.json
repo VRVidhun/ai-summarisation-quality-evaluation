@@ -1,0 +1,134 @@
+[
+  {
+    "article_id": "ART-01",
+    "claim_id": "CLM-01",
+    "fact_assertion": "High dose (0.6 mg/kg) produced 84% PCSK9 drop and 55% LDL-C reduction stable over 180 days.",
+    "source_sentence": "blood PCSK9 protein concentrations dropped by an average of 84% ... accompanied by a mean reduction in circulating LDL-C of 55% ... efficacy remained stable through 180 days",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "All four frontier models accurately reported the exact percentages and 180-day stability."
+  },
+  {
+    "article_id": "ART-01",
+    "claim_id": "CLM-02",
+    "fact_assertion": "Myocardial infarction in 57-year-old was adjudicated as secondary to pre-existing CAD, not the editing agent.",
+    "source_sentence": "An independent Data Safety Monitoring Board (DSMB) adjudicated this event as secondary to advanced underlying atherosclerotic disease rather than the genomic editing agent.",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Crucial safety fact: all models correctly captured the adjudication avoiding false alarm on drug lethality."
+  },
+  {
+    "article_id": "ART-02",
+    "claim_id": "CLM-03",
+    "fact_assertion": "Systemic risk threshold is set at cumulative training compute exceeding 10^25 FLOPs.",
+    "source_sentence": "classified as presenting systemic risk if its cumulative computational training capability exceeds 10^25 floating-point operations (FLOPs)",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "All models accurately captured the 10^25 FLOP compute threshold without rounding or power error."
+  },
+  {
+    "article_id": "ART-02",
+    "claim_id": "CLM-04",
+    "fact_assertion": "Prohibited practice fines reach up to \u20ac35 million or 7% of global turnover; GPAI fines reach \u20ac15M or 3%.",
+    "source_sentence": "fines of up to \u20ac35 million or 7% of global annual turnover ... Non-compliance with GPAI provider obligations ... up to \u20ac15 million or 3%",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "All models verified the top \u20ac35M/7% fine; Baseline prompt missed the \u20ac15M/3% GPAI tier."
+  },
+  {
+    "article_id": "ART-03",
+    "claim_id": "CLM-05",
+    "fact_assertion": "Solid-state sodium battery achieved 220 Wh/kg, 88.4% capacity after 1,500 cycles, and thermal stability to 310\u00b0C.",
+    "source_sentence": "attained a gravimetric energy density of 220 Wh/kg ... retaining 88.4% of its initial discharge capacity after 1,500 continuous 1C charge-discharge cycles ... no self-heating or explosive exothermic venting up to 310\u00b0C",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Exact numerical matches across all engineered models."
+  },
+  {
+    "article_id": "ART-04",
+    "claim_id": "CLM-06",
+    "fact_assertion": "Over 92% of advanced CoWoS packaging capacity is concentrated in Taiwan, requiring trans-Pacific wafer transport.",
+    "source_sentence": "more than 92% of the world's advanced CoWoS packaging capacity remains physically concentrated within Taiwan",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Verified in all summaries; highlighted as central supply-chain vulnerability."
+  },
+  {
+    "article_id": "ART-05",
+    "claim_id": "CLM-07",
+    "fact_assertion": "Extinct mastodon eDNA was detected in northern Greenland, vastly expanding its recognized northern range.",
+    "source_sentence": "researchers identified eDNA belonging to the extinct mastodon (Mammut) ... expanding their recognized ecological range by thousands of kilometers",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Unanimously identified as the primary paleontological surprise."
+  },
+  {
+    "article_id": "ART-06",
+    "claim_id": "CLM-08",
+    "fact_assertion": "ML-KEM-768 public keys require 1,184 bytes compared to 256 bytes for 2048-bit RSA.",
+    "source_sentence": "ML-KEM-768 public key requires 1,184 bytes, compared to 256 bytes for a 2048-bit RSA key",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "PARTIAL (Over 1,000 bytes)",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Gemini rounded to 'over 1,000 bytes', while ChatGPT, Claude, and NotebookLM cited exact 1,184 bytes."
+  },
+  {
+    "article_id": "ART-07",
+    "claim_id": "CLM-09",
+    "fact_assertion": "Cancellation asymmetry: 48 seconds to enroll versus 9.4 minutes and 4.2 confirmation screens to cancel.",
+    "source_sentence": "mean time to enroll in a subscription was 48 seconds, the cancellation process required an average of 9.4 minutes, navigating a mean of 4.2 confirmation screens",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Verified across all models; core behavioral friction finding."
+  },
+  {
+    "article_id": "ART-08",
+    "claim_id": "CLM-10",
+    "fact_assertion": "JADES-GS-z14-0 confirmed at z = 14.32 with stellar mass between 10^8 and 10^9 solar masses.",
+    "source_sentence": "JADES-GS-z14-0 (spectroscopically confirmed at z = 14.32), which exhibited stellar masses estimated between 10^8 and 10^9 solar masses",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Exact astronomical redshift and mass ranges preserved accurately."
+  },
+  {
+    "article_id": "ART-09",
+    "claim_id": "CLM-11",
+    "fact_assertion": "Drewry container spot rates escalated 237% from $1,600 to over $5,400 per 40-foot container.",
+    "source_sentence": "Drewry World Container Index spot rate for a 40-foot container ... surged from $1,600 in October 2023 to over $5,400 in June 2024\u2014a 237% escalation",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "Exact economic inflation metrics retained across all models."
+  },
+  {
+    "article_id": "ART-10",
+    "claim_id": "CLM-12",
+    "fact_assertion": "AI-augmented students dropped 17.3% (down to 71.1%) on unassisted proctored exams; Socratic cohort led at 83.7%.",
+    "source_sentence": "Cohort B experienced a 17.3% score decline relative to their weekly coursework, averaging only 71.1% ... Cohort C (Socratic AI) demonstrated the highest retention and critical reasoning scores, averaging 83.7%",
+    "chatgpt_status": "VERIFIED",
+    "claude_status": "VERIFIED",
+    "gemini_status": "VERIFIED",
+    "notebooklm_status": "VERIFIED",
+    "notes": "All models accurately reported the cognitive collapse in unassisted tests and the Socratic cohort victory."
+  }
+]

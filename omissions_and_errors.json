@@ -1,0 +1,122 @@
+[
+  {
+    "article_id": "ART-01",
+    "model": "ChatGPT",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted exact cohort size for the 0.45 mg/kg tier (n=4) and the specific 95% confidence intervals (76%-91% for PCSK9, 43%-66% for LDL-C).",
+    "impact": "Minimal impact on clinical interpretation, but omits statistical rigor bounds."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "Gemini",
+    "omission_type": "Critical Omission",
+    "severity": "Medium",
+    "description": "Failed to mention the lowest dose cohorts (0.1 and 0.3 mg/kg) having <8% effect, and omitted germline biodistribution concerns from future Phase 2 work.",
+    "impact": "Obscures the sigmoidal dose-response threshold and a key regulatory safety question."
+  },
+  {
+    "article_id": "ART-01",
+    "model": "Baseline_Before",
+    "omission_type": "Critical Omission & Generalization",
+    "severity": "High",
+    "description": "Dropped specific dose-response tiers completely, rounded numbers loosely ('over 80%', 'around 55%'), and omitted the 124 off-target loci sequencing check.",
+    "impact": "Leaves reader uninformed on dose thresholds and genomic safety verification."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the specific intermediate penalty tier (\u20ac7.5 million or 1.5% turnover) for supplying misleading information to authorities.",
+    "impact": "Leaves out the secondary enforcement tier."
+  },
+  {
+    "article_id": "ART-02",
+    "model": "Baseline_Before",
+    "omission_type": "Critical Omission",
+    "severity": "High",
+    "description": "Omitted the 3% / \u20ac15M GPAI violation fine tier, missed standard GPAI copyright obligations, and failed to state the staggered 6-36 month enforcement schedule.",
+    "impact": "Presents an incomplete and misleading picture of regulatory penalties and timelines."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the precise chemical stoichiometry of the NASICON electrolyte (Na3.2Zr1.9Ca0.1Si2PO12) and the exact room-temperature ionic conductivity metric (3.8 \u00d7 10^-3 S/cm).",
+    "impact": "Reduces technical reproducibility for materials science readers."
+  },
+  {
+    "article_id": "ART-03",
+    "model": "Baseline_Before",
+    "omission_type": "Critical Omission",
+    "severity": "High",
+    "description": "Omitted the NASICON, Prussian blue, and TiO2 chemical names, omitted the specific 62% cathode cost reduction calculation, and rounded temperature limits carelessly.",
+    "impact": "Fails to convey the scientific mechanisms that make the battery viable."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "ChatGPT",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Did not mention Amkor Technology's $2 billion packaging investment in Peoria, Arizona, focusing primarily on Intel.",
+    "impact": "Minor omission in domestic packaging expansion context."
+  },
+  {
+    "article_id": "ART-04",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Medium",
+    "description": "Omitted the $3 billion National Advanced Packaging Manufacturing Program (NAPMP) allocation and the comparative European CHIPS Act sum (\u20ac43B).",
+    "impact": "Reduces quantitative policy context regarding public funding initiatives."
+  },
+  {
+    "article_id": "ART-05",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the specific 41-sample count and enzymatic single-stranded shotgun sequencing methodology details.",
+    "impact": "Slightly reduces technical methodological transparency."
+  },
+  {
+    "article_id": "ART-06",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted mention of FIPS 206 (FN-DSA / Falcon) scheduled for late 2024 and the specific mathematical comparison to discrete logarithm hardness.",
+    "impact": "Minor omission in the full suite of NIST standardization tracks."
+  },
+  {
+    "article_id": "ART-07",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the 2,400 user empirical trial sample size and the 3.8x behavioral cancellation reduction ratio, focusing only on the $164 cost.",
+    "impact": "Weakens statistical evidentiary grounding."
+  },
+  {
+    "article_id": "ART-08",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted specific survey program names (CEERS) and instrument details (NIRCam/NIRSpec), focusing solely on the JADES survey and redshift numbers.",
+    "impact": "Minor loss of observational attribution."
+  },
+  {
+    "article_id": "ART-09",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the specific 3,500 to 4,000 nautical mile distance extension and individual shipping carrier names (Maersk, MSC, Hapag-Lloyd).",
+    "impact": "Minor loss of operational specificity."
+  },
+  {
+    "article_id": "ART-10",
+    "model": "Gemini",
+    "omission_type": "Minor Omission",
+    "severity": "Low",
+    "description": "Omitted the 14-week trial duration and the multi-institution setting (four universities), stating only the 1,200 student total.",
+    "impact": "Minor loss of experimental design parameters."
+  }
+]

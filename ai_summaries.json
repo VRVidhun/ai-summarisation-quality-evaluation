@@ -1,0 +1,237 @@
+{
+  "ART-01": {
+    "ChatGPT": {
+      "summary": "The Phase 1 PULSE-1 trial evaluated VERVE-101, an in vivo base editing treatment for heterozygous familial hypercholesterolemia (HeFH) delivering lipid nanoparticles to hepatic cells. In the trial, four cohorts tested doses up to 0.6 mg/kg. At the highest dose, patients experienced an average 84% reduction in PCSK9 protein and a 55% reduction in LDL cholesterol, which remained stable for 180 days. Intermediate dosing lowered LDL-C by 39%, while lower doses showed minimal impact. Mild infusion reactions occurred in about 36% of participants, and two patients had transient liver enzyme increases. One participant had a heart attack five weeks post-treatment, but it was attributed to underlying coronary disease. Sequencing showed no off-target edits across 124 loci. The researchers concluded that base editing is feasible for cholesterol reduction, though larger trials are needed to confirm long-term efficacy and safety.",
+      "word_count": 143,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "In the Phase 1 PULSE-1 trial (n=14), investigators evaluated VERVE-101, a hepatic adenine base-editing therapy administered via lipid nanoparticles to treat heterozygous familial hypercholesterolemia. Targeting a splice donor site in PCSK9 without double-stranded breaks, the highest dose (0.6 mg/kg, n=4) yielded durable reductions of 84% in circulating PCSK9 and 55% in LDL-C over 180 days. The 0.45 mg/kg dose reduced LDL-C by 39%, whereas lower doses (<0.3 mg/kg) were clinically inactive. Safety findings included infusion-related reactions in 35.7% of patients and transient Grade 3 transaminase spikes in two patients at 0.6 mg/kg, resolving by day 14. A non-fatal myocardial infarction in the 0.45 mg/kg cohort was deemed secondary to pre-existing CAD by the DSMB. Targeted sequencing revealed zero off-target editing across 124 candidate loci. Phase 2 trials must still address germline biodistribution and cardiovascular mortality endpoints.",
+      "word_count": 144,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "The PULSE-1 Phase 1 study tested VERVE-101 adenine base editing in 14 patients suffering from severe familial hypercholesterolemia. Results showed that high-dose administration (0.6 mg/kg) achieved an 84% drop in PCSK9 levels and reduced LDL-C by 55%, with effects lasting through 180 days. In comparison, 0.45 mg/kg achieved a 39% reduction. The treatment avoids double-stranded DNA breaks and detected zero off-target mutations at 124 loci. Regarding safety, five patients experienced mild infusion reactions, and two had temporary transaminase elevations. One patient experienced a heart attack, but an independent board judged it unrelated to the drug. Overall, the trial proves that permanent base editing can replace frequent injections, but further testing is required for long-term safety.",
+      "word_count": 121,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Based on the provided medical trial text, the Phase 1 PULSE-1 study tested the safety and pharmacodynamics of VERVE-101 in 14 adult patients with heterozygous familial hypercholesterolemia. Key findings include: (1) At the highest dose of 0.6 mg/kg (n=4), mean blood PCSK9 protein decreased by 84% and circulating LDL-C dropped by 55% from baseline at day 28, remaining stable through 180 days. (2) Intermediate dose of 0.45 mg/kg achieved a 39% LDL-C reduction, while lower tiers (<0.3 mg/kg) showed less than 8% reduction. (3) 5 of 14 patients had infusion reactions, 2 patients experienced Grade 3 ALT/AST elevations, and one patient had a non-fatal myocardial infarction attributed to underlying atherosclerosis. (4) Zero off-target base editing was detected across 124 candidate genomic loci. Phase 2 trials must evaluate long-term off-target stability and germline biodistribution.",
+      "word_count": 147,
+      "prompt_type": "Source-Grounded Prompt"
+    },
+    "Baseline_Before": {
+      "summary": "This article discusses a new CRISPR base editing trial called PULSE-1 for treating familial hypercholesterolemia. The therapy is called VERVE-101 and works by editing the PCSK9 gene in the liver using lipid nanoparticles. In the study, patients who got the highest dose saw their cholesterol drop significantly by around 55% and PCSK9 dropped by over 80%. Most side effects were mild like infusion reactions and some elevated liver enzymes, although one patient did have a serious heart attack during the trial. The researchers think this could be a promising one-time cure for high cholesterol if future studies go well.",
+      "word_count": 102,
+      "prompt_type": "Baseline Zero-Shot Prompt (Before)"
+    }
+  },
+  "ART-02": {
+    "ChatGPT": {
+      "summary": "The European Union has officially ratified the AI Act, creating a comprehensive risk-based framework for artificial intelligence. The law categorizes AI systems into four tiers: prohibited, high-risk, transparency-risk, and minimal-risk. Under Title VIIIa, general-purpose AI (GPAI) foundation models face specific rules, with 'systemic risk' models defined as those trained with more than 10^25 FLOPs. Systemic models like GPT-4 and Claude 3 Opus must undergo red-teaming, mitigate systemic risks, report cybersecurity incidents, and track energy efficiency. Standard GPAI developers must document training data and respect EU copyright laws. Non-compliance penalties are substantial, reaching up to \u20ac35 million or 7% of worldwide turnover for prohibited systems, and \u20ac15 million or 3% for GPAI violations. Enforcement rolls out between 6 and 36 months. While praised for consumer protections, critics claim the 10^25 FLOP threshold is arbitrary and may disadvantage European startups.",
+      "word_count": 144,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "The European Union has ratified the AI Act, establishing a horizontal, risk-differentiated governance framework across four tiers: unacceptable (prohibited), high risk, specific transparency risk, and minimal risk. Title VIIIa regulates General-Purpose AI (GPAI), creating heightened obligations for models presenting 'systemic risk'\u2014empirically defined by a compute threshold exceeding 10^25 FLOPs. While standard GPAI providers must maintain technical documentation and copyright summaries, systemic GPAI providers face mandatory adversarial red-teaming, systemic risk mitigation, serious cybersecurity incident reporting to the EU AI Office, and energy tracking. Administrative penalties are severe: up to \u20ac35M or 7% of global turnover for prohibited applications, and \u20ac15M or 3% for GPAI infringements. Implementation follows a graduated 6-to-36-month timeline. Critics highlight that the fixed compute threshold will quickly become obsolete and burden European capital, whereas human rights organizations commend its enforceable protections.",
+      "word_count": 139,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "The EU AI Act introduces the first comprehensive regulations for artificial intelligence, classifying systems by risk into prohibited, high-risk, transparency, and minimal risk categories. It places new obligations on General-Purpose AI (GPAI), designating systems trained on over 10^25 FLOPs as presenting 'systemic risk.' These developers must conduct red-teaming, prevent major safety threats, report cyber incidents to the European AI Office, and disclose energy metrics. Standard models must respect EU copyright. Fines are exceptionally high, reaching \u20ac35 million or 7% of global revenue for banned practices, and \u20ac15 million or 3% for general AI violations. The rules phase in over 6 to 36 months, though industry voices worry the regulations could hurt European startups and tech competitiveness.",
+      "word_count": 121,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "According to the analysis of the European Union AI Act: The regulation establishes a four-tier risk taxonomy: unacceptable risk (prohibited), high risk, specific transparency risk, and minimal risk. Title VIIIa outlines rules for General-Purpose AI (GPAI), creating a distinct tier for models with 'systemic risk' whose training compute exceeds 10^25 FLOPs. Systemic GPAI developers must conduct adversarial red-teaming, mitigate systemic risks (such as CBRN weapons and cyber threats), report serious incidents to the European AI Office, and record energy metrics. Baseline GPAI models must provide technical documentation and copyright summaries. Penalties are capped at \u20ac35 million or 7% of global turnover for prohibited practices, and \u20ac15 million or 3% for GPAI violations. Enforcement begins with bans after 6 months, GPAI rules at 12 months, and high-risk compliance at 24\u201336 months.",
+      "word_count": 137,
+      "prompt_type": "Source-Grounded Prompt"
+    },
+    "Baseline_Before": {
+      "summary": "The European Union has passed the AI Act to regulate artificial intelligence using a risk-based system. Some AI uses are completely banned, while others like high-risk systems face strict rules. Big AI models like GPT-4 fall under systemic risk if they use more than 10^25 FLOPs of computing power. Companies making these models have to test their systems, follow copyright rules, and report cyber issues. If companies break the law, they can face huge fines up to 35 million euros or 7% of their turnover. Some critics worry that this will hurt European tech startups compared to US companies.",
+      "word_count": 98,
+      "prompt_type": "Baseline Zero-Shot Prompt (Before)"
+    }
+  },
+  "ART-03": {
+    "ChatGPT": {
+      "summary": "Researchers at the Tokyo Energy Materials Institute developed a solid-state sodium-ion battery designed to replace lithium, cobalt, and nickel. The battery utilizes a densified NASICON ceramic solid electrolyte (Na3.2Zr1.9Ca0.1Si2PO12) paired with a Prussian blue analogue cathode, a sodium metal anode, and a 15-nm titanium dioxide protective layer. The ceramic provides an ionic conductivity of 3.8 \u00d7 10^-3 S/cm and prevents sodium dendrite growth. In tests, the prototype achieved 220 Wh/kg and maintained 88.4% capacity after 1,500 cycles at 1C. Thermal tests demonstrated stability without runaway up to 310\u00b0C, and the battery safely discharges to zero volts. Cathode material costs are 62% lower than NMC-811 ($24/kWh vs. $63/kWh). However, commercial scaling remains challenged by the high 1,150\u00b0C sintering temperature required, which causes micro-cracking during manufacturing.",
+      "word_count": 132,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "Addressing mineral supply chokepoints for lithium and cobalt, researchers in Tokyo engineered a solid-state sodium-ion battery achieving 220 Wh/kg\u2014exceeding commercial LFP cells. The architecture combines a NASICON solid electrolyte (Na3.2Zr1.9Ca0.1Si2PO12), a Prussian blue analogue cathode, a sodium metal anode, and a 15-nm TiO2 interfacial buffer layer that suppresses dendrite nucleation. The ceramic exhibits room-temperature ionic conductivity of 3.8 \u00d7 10^-3 S/cm and retained 88.4% capacity over 1,500 1C cycles. Thermal testing confirmed no runaway up to 310\u00b0C (compared to 160\u00b0C in liquid lithium cells). Eliminating scarce metals cuts cathode costs by 62% ($24/kWh vs. $63/kWh for NMC-811), and cells safely discharge to zero volts on aluminum collectors. Scalability hurdles include high-temperature sintering at 1,150\u00b0C prone to roll-to-roll micro-cracking, spurring research into low-temperature flash sintering.",
+      "word_count": 135,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "Tokyo Energy Materials Institute researchers have demonstrated a solid-state sodium-ion battery that eliminates reliance on lithium, nickel, and cobalt. Using a NASICON ceramic electrolyte and Prussian blue cathode with a 15-nanometer TiO2 protective layer, the battery delivers an energy density of 220 Wh/kg, surpassing traditional LFP batteries. It retained over 88% capacity after 1,500 cycles and demonstrated extreme thermal safety up to 310\u00b0C. Cathode raw materials are estimated to be 62% cheaper than NMC-811, and the battery allows safe zero-volt shipping. The main obstacle to commercialization is the 1,150\u00b0C sintering temperature needed for the ceramic, which causes cracking issues during roll-to-roll production.",
+      "word_count": 105,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Researchers engineered a solid-state sodium-ion battery utilizing Earth-abundant sodium to bypass lithium and cobalt supply constraints. Key specifications and outcomes: (1) Core Materials: Densified NASICON ceramic electrolyte (Na3.2Zr1.9Ca0.1Si2PO12), Prussian blue analogue cathode, sodium-metal anode, and 15-nm TiO2 buffer layer. (2) Performance: High ionic conductivity (3.8 \u00d7 10^-3 S/cm), 220 Wh/kg energy density, and 88.4% capacity retention after 1,500 cycles at 1C. (3) Safety & Economics: No thermal runaway up to 310\u00b0C (vs. 160\u00b0C for liquid lithium), 62% cathode material cost savings ($24/kWh vs. $63/kWh for NMC-811), and safe zero-volt discharge. (4) Scalability Bottleneck: High-temperature sintering at 1,150\u00b0C induces micro-cracking, requiring development of flash-sintering techniques for 2026 pilot lines.",
+      "word_count": 126,
+      "prompt_type": "Source-Grounded Prompt"
+    },
+    "Baseline_Before": {
+      "summary": "This article explains how solid-state sodium batteries can replace lithium-ion batteries. Researchers developed a battery using sodium instead of expensive lithium and cobalt. It uses a ceramic electrolyte and has an energy density of 220 Wh/kg, which is higher than regular LFP batteries. It can also last for 1,500 cycles and doesn't catch fire even at high temperatures up to 300 degrees. Making the battery is much cheaper, but the ceramic part has to be heated to 1,150 degrees which causes cracks, so scientists are still trying to solve this manufacturing problem before it can be used in electric cars.",
+      "word_count": 100,
+      "prompt_type": "Baseline Zero-Shot Prompt (Before)"
+    }
+  },
+  "ART-04": {
+    "ChatGPT": {
+      "summary": "Western nations have invested over $100 billion via the US and EU CHIPS Acts to onshore semiconductor fabrication, but industry analysts emphasize that back-end advanced packaging\u2014not front-end lithography\u2014is the real AI chip bottleneck. Flagship accelerators like Nvidia's H100 and AMD's MI300X require 2.5D/3D chiplet integration and HBM3e memory linked via TSMC's proprietary CoWoS packaging. More than 92% of this capacity is concentrated in Taiwan. Consequently, even when US fabs produce 4nm/3nm wafers in Arizona, they must still be shipped back to Taiwan for packaging, leaving Taiwan Strait geopolitical vulnerabilities intact. The US has allocated $3 billion for packaging initiatives, and Intel is expanding domestic capacity, but TSMC's Arizona packaging unit will not be operational until 2028. Adding to delays are a projected shortage of 67,000 skilled workers by 2030 and US construction costs 4.5 times higher than Taiwan's.",
+      "word_count": 145,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "Despite $100 billion committed under the US ($52.7B) and EU (\u20ac43B) CHIPS Acts, advanced heterogeneous packaging remains the unresolved choke-point of semiconductor supply chains. Modern AI accelerators (Nvidia H100/B200, AMD MI300X) require multi-die integration and HBM via TSMC's proprietary CoWoS technology. Crucially, over 92% of global CoWoS packaging remains physically concentrated in Taiwan. Thus, 4nm/3nm silicon wafers fabricated at TSMC's Arizona fab must still be shipped across the Pacific for packaging, leaving geopolitical supply chain vulnerabilities untouched. While the US Department of Commerce allocated $3 billion toward advanced packaging and Intel expanded domestic facilities, TSMC's US packaging facility will not open until 2028. Compounding these structural hurdles are a projected 67,000-worker technical deficit by 2030 and domestic fab construction costs 4.5 times higher than in Taiwan.",
+      "word_count": 133,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "The US and EU CHIPS Acts have provided billions to build semiconductor fabs in the West, but advanced packaging remains a severe bottleneck for AI chips. High-end processors from Nvidia and AMD rely on 2.5D and 3D packaging technologies like TSMC's CoWoS, of which 92% is based in Taiwan. Because of this, chips manufactured at new US plants in Arizona must still be shipped to Taiwan for packaging, maintaining geopolitical vulnerability. Although the US has allocated $3 billion for domestic packaging programs and companies like Intel and Amkor are expanding, TSMC's US packaging will not be ready until 2028. The industry also faces high domestic building costs and a deficit of 67,000 engineers by 2030.",
+      "word_count": 119,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Subsidies totaling over $100B under the US ($52.7B) and EU (\u20ac43B) CHIPS Acts have funded front-end fabrication, but back-end advanced packaging is the true bottleneck for generative AI hardware. Core findings: (1) Architecture: Flagship AI accelerators (Nvidia H100/B200, AMD MI300X) depend on 2.5D/3D heterogeneous packaging and HBM via TSMC's CoWoS. (2) Geographic Chokepoint: Over 92% of CoWoS capacity resides in Taiwan. Silicon wafers made at TSMC Arizona must still be air-freighted to Taiwan for packaging, leaving Taiwan Strait risk unresolved. (3) Mitigation & Delays: US NAPMP allocated $3B; Intel and Amkor are expanding, but TSMC's Arizona packaging phase is delayed to 2028. (4) Labor & Cost Deficits: The US faces an acute shortage of 67,000 microelectronics professionals by 2030 and fab construction costs 4.5x higher than Taiwan.",
+      "word_count": 142,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-05": {
+    "ChatGPT": {
+      "summary": "Geneticists have successfully sequenced two-million-year-old environmental DNA (eDNA) from Peary Land in northern Greenland, establishing a new record for ancient DNA recovery and surpassing the previous 1.2-million-year mark. During this early Pleistocene period, northern Greenland was 11\u00b0C to 19\u00b0C warmer than today. Metagenomic analysis of 41 sediment samples revealed 102 plant genera and 9 animal species. The flora featured boreal species like poplar and birch alongside temperate species such as English yew (Taxus baccata), demonstrating how plants adapted to months of continuous polar light. Remarkably, the animal DNA included the extinct mastodon (Mammut), proving these creatures migrated much further north than previously documented. Marine eDNA also identified Atlantic horseshoe crabs. The findings indicate that biological species respond individually to climate warming rather than shifting as rigid, monolithic biomes.",
+      "word_count": 133,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "Recovered from Kap K\u00f8benhavn sediment in northern Greenland, two-million-year-old environmental DNA (eDNA) has shattered the previous ancient DNA record of 1.2 million years. Shotgun sequencing across 41 sediment samples reconstructed an early Pleistocene ecosystem dating to an epoch when temperatures were 11\u00b0C\u201319\u00b0C warmer than today. The data identified 102 plant genera and 9 animal species. Botanically, open boreal forests featured poplar, birch, and unexpectedly, the temperate English yew (Taxus baccata), indicating that tree taxa tolerated high-latitude polar photoperiods under elevated temperatures. Faunal eDNA confirmed reindeer, hares, geese, and the extinct mastodon (Mammut)\u2014extending the known geographic range of mastodons into northern Greenland by thousands of kilometers. Marine layers revealed Atlantic horseshoe crabs. Crucially, the discovery reveals that ecosystems do not migrate as static biomes during rapid warming, but dynamically re-assort based on individual species thresholds.",
+      "word_count": 139,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "Scientists have extracted two-million-year-old environmental DNA from northern Greenland's Kap K\u00f8benhavn Formation, setting an ancient DNA record. The genetic material revealed that northern Greenland was 11\u00b0C to 19\u00b0C warmer during an interglacial period, supporting a lush forest ecosystem. Researchers identified over 100 plant genera and 9 animal species, including birch, poplar, and temperate yew trees. Crucially, eDNA proved the presence of extinct mastodons, vastly expanding their known habitat into the Arctic. Marine DNA also detected horseshoe crabs 1,500 km north of their modern range. The study demonstrates that species adapt individually rather than shifting as complete biomes during climate change.",
+      "word_count": 105,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Geneticists recovered two-million-year-old environmental DNA (eDNA) from the Kap K\u00f8benhavn Formation in Peary Land, northern Greenland, breaking the prior 1.2-million-year record from a Siberian mammoth tooth. Key findings include: (1) Climate: Northern Greenland was 11\u00b0C to 19\u00b0C warmer than today during an early Pleistocene interglacial epoch. (2) Ecosystem: Metagenomic analysis of 41 clay and quartz samples identified 102 plant genera and 9 animal species. (3) Flora & Fauna: Flora included poplar, birch, and temperate English yew (Taxus baccata) adapted to polar light cycles. Fauna included reindeer, lemmings, geese, and extinct mastodons (Mammut), expanding the mastodon's known range into northern Greenland. (4) Marine & Evolution: Marine eDNA identified Atlantic horseshoe crabs; findings show ecological communities re-assort dynamically rather than moving as monolithic biomes.",
+      "word_count": 133,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-06": {
+    "ChatGPT": {
+      "summary": "NIST has released the first post-quantum cryptography standards\u2014FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)\u2014to defend digital communications against Shor's algorithm on future quantum computers. Unlike RSA and ECC, which rely on integer factorization and discrete logarithms, these new algorithms are based on lattice mathematics (Module-LWE), which is resistant to both classical and quantum attacks. The urgency to transition is driven by 'Harvest Now, Decrypt Later' (HNDL) attacks, where adversaries steal encrypted data today to decrypt in 10-15 years when quantum hardware matures. However, enterprise migration is hindered by larger key sizes (e.g., 1,184 bytes for ML-KEM-768 vs. 256 bytes for RSA-2048), causing packet fragmentation and IoT buffer overflows. Additionally, millions of legacy hardware security modules and embedded devices have fixed crypto accelerators requiring costly physical replacement.",
+      "word_count": 136,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "NIST has released the first standardized post-quantum cryptography (PQC) algorithms\u2014FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)\u2014marking the transition away from RSA and ECC algorithms vulnerable to Shor's algorithm. Grounded in lattice-based Module-LWE problems, these standards resist both quantum and classical cryptanalysis. The transition is accelerated by 'Harvest Now, Decrypt Later' (HNDL) threats, where adversaries intercept long-life sensitive data today for future quantum decryption. Enterprise adoption faces significant technical obstacles: lattice keys are substantially larger (ML-KEM-768 uses 1,184 bytes compared to 256 bytes for RSA-2048), prompting IP packet fragmentation, lower network throughput, and IoT buffer overflows. Furthermore, millions of legacy hardware security modules (HSMs) and embedded automotive controllers contain fixed firmware, demanding expensive decade-long hardware replacement cycles.",
+      "word_count": 128,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "NIST has officially published post-quantum cryptography standards (FIPS 203 ML-KEM, FIPS 204 ML-DSA, FIPS 205 SLH-DSA) to replace RSA and ECC before quantum computers can break them using Shor's algorithm. Built on multidimensional lattice mathematics, these algorithms prevent adversaries from executing 'Harvest Now, Decrypt Later' attacks on intercepted data. However, the migration poses real challenges: lattice keys are significantly larger than RSA keys (over 1,000 bytes for ML-KEM vs 256 bytes for RSA), which can cause network packet fragmentation and slowdowns. Moreover, older hardware security modules and IoT devices cannot be updated via software and will need full hardware replacement.",
+      "word_count": 105,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: NIST finalized the first official Post-Quantum Cryptography standards to replace vulnerable public-key systems (RSA, ECC). (1) Standards: FIPS 203 (ML-KEM/Kyber), FIPS 204 (ML-DSA/Dilithium), and FIPS 205 (SLH-DSA/SPHINCS+), anchored in Module-LWE lattice mathematics that resists Shor's algorithm. (2) Driving Threat: 'Harvest Now, Decrypt Later' (HNDL), where nation-states store encrypted intelligence and blueprints today to decrypt with future quantum computers in 10\u201315 years. (3) Technical Friction: Lattice keys are significantly larger (ML-KEM-768 requires 1,184 bytes vs 256 bytes for RSA-2048), causing IP packet fragmentation, reduced network throughput, and memory overflow in IoT devices. (4) Hardware Obstacles: Embedded systems, HSMs, and automotive controllers lack upgradable firmware, requiring decade-long physical replacement cycles.",
+      "word_count": 122,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-07": {
+    "ChatGPT": {
+      "summary": "An empirical study of 500 direct-to-consumer subscription platforms in North America discovered that 76.4% employ deceptive dark patterns, including roach motels, confirmshaming, forced continuity, hidden fees, and fake urgency timers. The study highlighted severe cancellation friction: while signup averaged 48 seconds, cancellation required an average of 9.4 minutes across 4.2 confirmation screens. Behavioral experiments with 2,400 participants showed that users exposed to these deceptive architectures were 3.8 times less likely to cancel unwanted subscriptions, suffering an average annual loss of $164. In response, the US Federal Trade Commission enacted an updated 'Click-to-Cancel' rule under Section 5, requiring cancellation to be as simple as enrollment, without mandatory phone queues or retention surveys. Violations carry civil penalties up to $50,120 per violation plus restitution. While industry groups object, researchers emphasize that clear enforcement is necessary to preserve consumer autonomy.",
+      "word_count": 141,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "An empirical audit of 500 North American subscription e-commerce platforms revealed that 76.4% utilize deceptive 'dark patterns'\u2014including roach motels, confirmshaming, forced continuity, and hidden fees. The investigation documented sharp interface asymmetry: whereas onboarding averaged 48 seconds, cancellation required 9.4 minutes and 4.2 confirmation screens. In controlled trials with 2,400 consumers, participants facing forced continuity were 3.8 times less likely to terminate unwanted subscriptions, incurring an average annual welfare loss of $164 per user. To curb this manipulation, the FTC updated its 'Click-to-Cancel' rule under Section 5, mandating that cancellation mechanisms match enrollment simplicity and banning mandatory retention loops. Non-compliance carries statutory penalties up to $50,120 per violation alongside mandatory restitution. While corporate counsel argues the regulation restricts valid marketing, empirical evidence underscores that algorithmic guardrails are vital to safeguard consumer sovereignty.",
+      "word_count": 137,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "A study of 500 subscription platforms found that over 76% use deceptive dark patterns like hidden charges, forced continuity, and 'roach motels' that make leaving difficult. Researchers found it took 48 seconds to sign up but an average of 9.4 minutes and 4 screens to cancel. This friction caused manipulated consumers to lose an average of $164 per year. In response, the FTC enacted its 'Click-to-Cancel' rule, mandating that canceling a subscription must be as quick and easy as signing up, with fines reaching up to $50,120 per violation. Businesses argue this hurts customer retention, but regulators insist it protects consumer rights.",
+      "word_count": 105,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Study investigating dark patterns across 500 subscription platforms and regulatory responses. Key findings: (1) Prevalence: 76.4% of platforms used deceptive patterns (e.g., Roach Motel, Confirmshaming, Forced Continuity, Hidden Costs, False Urgency). (2) Asymmetric Friction: Average enrollment took 48 seconds, while cancellation took 9.4 minutes navigating 4.2 confirmation screens. (3) Consumer Harm: In trials with 2,400 users, dark patterns made cancellation 3.8 times less likely, costing consumers an average of $164 annually. (4) Regulatory Crackdown: The FTC issued an updated 'Click-to-Cancel' rule under Section 5 requiring cancellation to be as direct as enrollment, with civil penalties up to $50,120 per violation and mandatory restitution.",
+      "word_count": 113,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-08": {
+    "ChatGPT": {
+      "summary": "The James Webb Space Telescope (JWST) has observed an unexpected abundance of bright, massive galaxies at redshifts exceeding z = 10 (300 to 450 million years after the Big Bang), challenging the standard Lambda-CDM cosmological model. Under Lambda-CDM, structure forms hierarchically, meaning massive galaxies should not exist so early. Surveys such as JADES and CEERS have found dozens of candidates, including JADES-GS-z14-0 at z = 14.32 with an estimated stellar mass of 10^8 to 10^9 solar masses. If standard mass-to-light ratios hold, this implies nearly 100% of primordial gas was converted into stars, contradicting known supernova and wind feedback mechanisms. To explain this, astronomers suggest either these galaxies contain massive Population III stars with a top-heavy Initial Mass Function or obscured AGN, or Lambda-CDM cosmological parameters require revision. High-resolution NIRSpec spectroscopy is underway to resolve the question.",
+      "word_count": 145,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "JWST observations of luminous, massive galaxies at redshifts z > 10 (300\u2013450 million years post-Big Bang) have sparked the 'impossible early galaxy' dilemma, challenging hierarchical structure formation under standard Lambda-CDM cosmology. Deep surveys (JADES, CEERS) identified candidates such as JADES-GS-z14-0 (spectroscopically confirmed at z = 14.32) exhibiting estimated stellar masses of 10^8\u201310^9 solar masses. Explaining this luminosity under standard mass-to-light assumptions requires near 100% baryonic conversion efficiency, defying known stellar feedback physics. Cosmologists are divided: one group proposes astrophysical explanations, such as top-heavy Initial Mass Functions dominated by metal-free Population III stars or obscured supermassive black hole accretion; the second group posits cosmological revisions, including non-Gaussian primordial density fluctuations or dynamical dark energy accelerating early halo collapse. Ongoing NIRSpec spectroscopic follow-ups aim to resolve this tension.",
+      "word_count": 133,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "Data from the James Webb Space Telescope has uncovered bright, massive galaxies existing just 300 to 450 million years after the Big Bang (z > 10), contradicting predictions from the standard Lambda-CDM cosmological model. For example, JADES-GS-z14-0 at z = 14.32 exhibits stellar masses up to 10^9 solar masses, implying an impossibly high star formation efficiency near 100%. Scientists are debating two explanations: either the galaxies are unusually bright due to massive Population III stars or hidden black holes, or cosmological models of early dark matter halo formation must be revised. High-resolution spectroscopy is currently analyzing these distant galaxies to uncover the answer.",
+      "word_count": 108,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: JWST observations of high-redshift galaxies and cosmological implications. (1) Empirical Anomaly: JWST NIRCam/NIRSpec observations discovered numerous bright galaxies at z > 10 (300\u2013450 Myr post-Big Bang), including JADES-GS-z14-0 confirmed at z = 14.32 with stellar mass of 10^8\u201310^9 solar masses. (2) Cosmological Conflict: Standard Lambda-CDM assumes hierarchical halo growth; explaining observed luminosity with normal mass-to-light ratios requires near 100% gas conversion efficiency, defying known feedback limits. (3) Proposed Solutions: Astrophysical hypothesis: top-heavy Initial Mass Function of massive Population III stars or obscured AGN accretion mimicking higher mass. Cosmological hypothesis: non-Gaussian fluctuations or dynamical dark energy accelerating dark matter halo collapse. (4) Current Work: High-resolution NIRSpec spectroscopy measuring metallicity and velocity dispersion to test theories.",
+      "word_count": 130,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-09": {
+    "ChatGPT": {
+      "summary": "Attacks by Houthi forces on commercial vessels in the Bab el-Mandeb strait have caused a 67% plunge in Suez Canal traffic, forcing shipping alliances to detour around the Cape of Good Hope. The rerouting adds 3,500 to 4,000 nautical miles and 10 to 14 days to Shanghai-Rotterdam voyages, prompting carriers to absorb 1.2 million TEUs of surplus capacity to keep schedules regular. Maritime insurance costs soared from 0.05% to over 1.0% of vessel value, while the Drewry spot rate for 40-foot containers escalated 237%, from $1,600 to over $5,400. In addition, faster steaming and longer journeys boosted fuel consumption by 35%, generating an estimated 13.5 million metric tons of excess maritime CO2 in early 2024. Despite Western naval operations, commercial confidence remains low, making the African detour the shipping standard through 2025.",
+      "word_count": 139,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "Houthi drone and missile strikes in the Bab el-Mandeb chokepoint precipitated a 67% collapse in Suez Canal transit, compelling global container carriers to divert around Africa's Cape of Good Hope. For Shanghai-to-Rotterdam routes, this detour adds 3,500\u20134,000 nautical miles and 10\u201314 days, requiring the injection of 1.2 million TEUs in container capacity to maintain weekly liner strings. The economic fallout was swift: Red Sea war-risk insurance rose from 0.05% to over 1.0% of hull value, while Drewry spot freight rates jumped 237% from $1,600 to $5,400 per FEU. Environmental consequences include a 35% fuel consumption increase and 13.5 million metric tons of extra maritime CO2 emissions in H1 2024. Multinational naval escorts (Operation Prosperity Guardian) have failed to restore insurer confidence, establishing Cape diversions as the default baseline into 2025.",
+      "word_count": 139,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "Houthi attacks in the Red Sea's Bab el-Mandeb strait have forced 67% of ship traffic away from the Suez Canal and around the Cape of Good Hope. This detour extends Asia-Europe voyages by 10 to 14 days (up to 4,000 nautical miles) and forced shipping lines to deploy 1.2 million TEU in extra ship capacity. Consequently, spot freight rates from Shanghai to Rotterdam jumped by 237% to over $5,400, and insurance premiums increased tenfold. The crisis also increased fuel burn by 35%, releasing an extra 13.5 million tons of carbon emissions. Naval patrols have not restored commercial confidence, leaving rerouted shipping intact into 2025.",
+      "word_count": 109,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Analysis of the Red Sea shipping crisis and geoeconomic ramifications. (1) Chokepoint Disruption: Houthi strikes in Bab el-Mandeb reduced Suez Canal transits by 67% (from 72 to <24 ships/day), diverting vessels around the Cape of Good Hope. (2) Logistics Impact: Adds 3,500\u20134,000 nautical miles and 10\u201314 transit days on Shanghai-Rotterdam lanes; absorbed 1.2 million TEUs of carrier capacity. (3) Financial Inflation: War-risk insurance climbed from 0.05% to >1.0% of vessel value; Drewry spot rates spiked 237% ($1,600 to $5,400+ per 40-ft container). (4) Carbon Footprint: Faster steaming and longer distances increased fuel use by 35% and added 13.5M metric tons of CO2 in H1 2024. Naval task forces have failed to restore insurance confidence.",
+      "word_count": 130,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  },
+  "ART-10": {
+    "ChatGPT": {
+      "summary": "A 1,200-student randomized controlled trial across four US universities examined the cognitive impact of generative AI in undergraduate education. Students were split into three groups: unassisted control (Cohort A), AI-augmented with GPT-4 (Cohort B), and Socratic AI tutoring (Cohort C). Cohort B students scored higher on weekly coursework (88.4% vs. 81.2% for control), producing more polished essays. However, on unassisted, proctored pen-and-paper exams evaluating analytical synthesis and counterarguments, Cohort B suffered a 17.3% performance drop to 71.1%. In contrast, Cohort A remained stable at 80.4%, while Cohort C achieved the highest retention at 83.7%. Eye-tracking data revealed 68% of Cohort B students engaged in 'copy-paste-skim' behavior. The researchers concluded that passive cognitive offloading fosters an 'illusion of competence,' while Socratic AI scaffolding supports active retrieval and deep critical thinking.",
+      "word_count": 137,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Claude": {
+      "summary": "In a 14-week randomized controlled trial involving 1,200 undergraduates across four universities, researchers assessed the cognitive effects of generative AI on academic synthesis and critical thinking. Participants were divided into unassisted control (Cohort A), AI-augmented with GPT-4 (Cohort B), and Socratic AI tutoring (Cohort C). While Cohort B achieved superior weekly assignment grades (88.4% vs. 81.2% for Cohort A and 84.6% for Cohort C), they suffered a 17.3% performance collapse (down to 71.1%) on unassisted proctored examinations. Conversely, Cohort A maintained consistent scores (80.4%), and Cohort C led in retention (83.7%). Observational data revealed 68% of Cohort B students practiced 'copy-paste-skim' habits without reading underlying citations. The authors conclude that passive cognitive offloading generates an 'illusion of competence,' whereas Socratic interactive scaffolding preserves essential retrieval practice.",
+      "word_count": 135,
+      "prompt_type": "Engineered (Chain-of-Density)"
+    },
+    "Gemini": {
+      "summary": "A 1,200-student study across four universities tested the effects of generative AI on college learning across three groups: no AI (Cohort A), open GPT-4 use (Cohort B), and Socratic AI tutoring (Cohort C). The GPT-4 group earned higher grades on weekly essays (88.4%) but plummeted by 17.3% to 71.1% on closed-book, pen-and-paper exams. Meanwhile, the unassisted group stayed stable at 80.4%, and the Socratic group achieved the top exam average at 83.7%. Screen tracking showed 68% of AI-augmented students simply copied and skimmed texts. The study warns that passive AI assistance creates an illusion of competence, whereas guided Socratic AI strengthens critical thinking.",
+      "word_count": 109,
+      "prompt_type": "Engineered (Structured)"
+    },
+    "NotebookLM": {
+      "summary": "Source summary: Randomized controlled trial of 1,200 undergraduate students investigating generative AI's impact on critical thinking and retention. (1) Methodology: Three cohorts over 14 weeks: Cohort A (Unassisted control), Cohort B (AI-augmented with GPT-4), Cohort C (Socratic AI tutor). (2) Weekly Coursework: Cohort B scored highest (88.4% vs 81.2% for Cohort A and 84.6% for Cohort C) with superior syntactic polish. (3) Proctored Exam Collapse: On unassisted pen-and-paper exams, Cohort B dropped 17.3% to 71.1%. Cohort A scored 80.4%, while Cohort C scored 83.7%. (4) Mechanism: 68% of Cohort B students engaged in copy-paste-skim habits. Passive cognitive offloading created an 'illusion of competence,' whereas Socratic AI preserved retrieval practice and metacognition.",
+      "word_count": 126,
+      "prompt_type": "Source-Grounded Prompt"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+Article ID,Model,Faithfulness (1-5),Coverage (1-5),Conciseness (1-5),Coherence (1-5),Attribution (1-5),Composite Score,Evaluator Notes
+ART-01,ChatGPT,4.8,4.6,4.7,4.9,4.8,4.76,Highly fluent; captured all 4 dose tiers and 180-day follow-up. Accurately noted unrelated MI.
+ART-01,Claude,4.9,4.9,4.8,4.9,4.9,4.88,"Gold-standard quality. Captured exact sample sizes (n=14, n=4), DSMB adjudication, and germline caveat."
+ART-01,Gemini,4.7,4.2,4.6,4.7,4.5,4.54,Good summary but omitted the 0.1 and 0.3 mg/kg dose tiers and germline biodistribution caveat.
+ART-01,NotebookLM,4.9,4.7,4.4,4.5,4.9,4.68,Direct source-grounded layout; structured bullet style. Very faithful to exact confidence numbers.
+ART-01,Baseline_Before,4.2,3.4,3.8,4.2,3.8,3.88,"Vague on numbers ('over 80%', 'drop significantly'); omitted dose cohorts and off-target 124 loci check."
+ART-02,ChatGPT,4.8,4.7,4.6,4.9,4.8,4.76,"Thorough coverage of FLOP threshold (10^25), fine percentages (7% and 3%), and phased timeline."
+ART-02,Claude,4.9,4.8,4.9,4.9,4.9,4.88,"Precise legal terminology (Title VIIIa, graduated schedule, systemic threat taxonomy). Flawless."
+ART-02,Gemini,4.7,4.3,4.7,4.6,4.6,4.58,Concise; omitted the misleading information fine tier (€7.5M/1.5%) and copyright summary nuances.
+ART-02,NotebookLM,4.9,4.8,4.5,4.6,4.9,4.74,Clean legal summary. Retained exact statutory fine figures and graduated timeline breakdown.
+ART-02,Baseline_Before,4.3,3.5,3.9,4.3,3.9,3.98,"Missed standard GPAI obligations, 3% fine tier, and graduated 6-36 month enforcement schedule."
+ART-03,ChatGPT,4.8,4.7,4.7,4.8,4.8,4.76,"Accurate NASICON formula, 220 Wh/kg, 1,500 cycles, 310°C ARC test, and 1,150°C sintering caveat."
+ART-03,Claude,4.9,4.9,4.9,4.9,4.9,4.9,Exceptionally detailed materials science summary. Retained all chemical formulas and ionic conductivity.
+ART-03,Gemini,4.7,4.3,4.8,4.7,4.6,4.62,High clarity; omitted exact NASICON chemical formula and specific ionic conductivity value.
+ART-03,NotebookLM,4.9,4.8,4.5,4.6,4.9,4.74,"Extremely well-grounded; structured into materials, performance, safety, and bottlenecks."
+ART-03,Baseline_Before,4.4,3.6,3.7,4.1,3.7,3.9,"Lacks chemical specifics (NASICON, Prussian blue, TiO2); rounded temperatures loosely."
+ART-04,ChatGPT,4.8,4.7,4.7,4.8,4.8,4.76,Strong explanation of front-end vs packaging chokepoint. Captured 92% concentration and 2028 delay.
+ART-04,Claude,4.9,4.8,4.9,4.9,4.9,4.88,"Superb geopolitical and technical synthesis. Retained HBM3e, CoWoS, 67k labor shortage, and 4.5x cost."
+ART-04,Gemini,4.6,4.3,4.8,4.6,4.5,4.56,Clear flow; condensed NAPMP details and omitted the EU CHIPS Act funding comparison (€43B).
+ART-04,NotebookLM,4.9,4.8,4.6,4.6,4.8,4.74,Structured fact extraction. Emphasized trans-Pacific round-trip shipment vulnerability clearly.
+ART-05,ChatGPT,4.8,4.6,4.7,4.9,4.8,4.76,Clear timeline and biological surprise. Included Taxus baccata and mastodon range expansion.
+ART-05,Claude,4.9,4.9,4.8,4.9,4.9,4.88,Deep ecological synthesis. Accurately highlighted individual species re-assortment concept.
+ART-05,Gemini,4.6,4.3,4.7,4.7,4.6,4.58,Succinct and accurate; omitted sample count (41) and specific shotgun metagenomic protocol details.
+ART-05,NotebookLM,4.9,4.7,4.5,4.6,4.9,4.72,Meticulous grounding. Accurately noted comparison to previous 1.2M Siberian mammoth tooth record.
+ART-06,ChatGPT,4.8,4.6,4.7,4.8,4.8,4.74,"Explains Shor's algorithm, HNDL threat, FIPS standards, and key size expansion (1,184 vs 256 bytes)."
+ART-06,Claude,4.9,4.8,4.9,4.9,4.9,4.88,"Superior cryptographic taxonomy (Module-LWE, packet fragmentation, HSM hardware barriers)."
+ART-06,Gemini,4.6,4.2,4.8,4.7,4.6,4.58,Good overview; omitted the fourth upcoming standard FIPS 206 (FN-DSA) and discrete log context.
+ART-06,NotebookLM,4.9,4.7,4.5,4.6,4.8,4.7,Accurately extracted the four FIPS standards and specific key sizes without hallucination.
+ART-07,ChatGPT,4.8,4.7,4.7,4.9,4.8,4.78,"Captures 76.4% prevalence, 48s vs 9.4min asymmetry, $164 loss, and FTC $50,120 civil penalty."
+ART-07,Claude,4.9,4.8,4.8,4.9,4.9,4.86,Rigorous behavioral economics summary; captured Section 5 FTC Act and 3.8x cancellation reluctance.
+ART-07,Gemini,4.6,4.3,4.7,4.7,4.6,4.58,"Impactful; omitted the 2,400 participant sample size and the specific 3.8x behavioral metric."
+ART-07,NotebookLM,4.9,4.7,4.5,4.6,4.9,4.72,"Direct structured summary of empirical metrics, consumer loss, and FTC enforcement mechanisms."
+ART-08,ChatGPT,4.8,4.7,4.7,4.8,4.8,4.76,"Explains high-redshift anomaly, JADES-GS-z14-0, Population III top-heavy IMF, and Lambda-CDM tension."
+ART-08,Claude,4.9,4.9,4.9,4.9,4.9,4.9,Masterful cosmological explanation. Accurately balanced astrophysics vs cosmological hypotheses.
+ART-08,Gemini,4.6,4.2,4.7,4.6,4.6,4.54,Clear dilemma framing; omitted specific NIRCam/NIRSpec instrument mentions and CEERS survey name.
+ART-08,NotebookLM,4.9,4.7,4.5,4.6,4.9,4.72,"Clean conceptual split between empirical anomaly, conflict, solutions, and ongoing spectroscopy."
+ART-09,ChatGPT,4.8,4.7,4.7,4.9,4.8,4.78,"Covers 67% Suez drop, 10-14 days extra, 237% spot rate surge, 35% fuel spike, and 13.5M ton CO2."
+ART-09,Claude,4.9,4.8,4.8,4.9,4.9,4.86,Comprehensive logistics review. Named Operation Prosperity Guardian and Drewry container index.
+ART-09,Gemini,4.6,4.3,4.7,4.7,4.6,4.58,"Strong economic summary; omitted the specific 3,500-4,000 nautical mile range and carrier names."
+ART-09,NotebookLM,4.9,4.7,4.6,4.6,4.9,4.74,"Exact data points extracted faithfully across chokepoint, logistics, finance, and emissions."
+ART-10,ChatGPT,4.8,4.7,4.7,4.9,4.8,4.78,"Captured the 3 cohorts, 17.3% exam drop, 68% copy-paste-skim habit, and illusion of competence."
+ART-10,Claude,4.9,4.9,4.8,4.9,4.9,4.88,Profound cognitive psychology summary. Emphasized active retrieval vs passive offloading clearly.
+ART-10,Gemini,4.6,4.4,4.7,4.7,4.6,4.6,Clear narrative; omitted the specific 14-week duration and university count (four institutions).
+ART-10,NotebookLM,4.9,4.7,4.5,4.6,4.9,4.72,Structured contrast between weekly coursework grades and proctored exam performance drop.

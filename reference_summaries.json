@@ -1,0 +1,132 @@
+{
+  "ART-01": {
+    "article_id": "ART-01",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "In the Phase 1 PULSE-1 clinical trial involving 14 adults with heterozygous familial hypercholesterolemia (HeFH), researchers evaluated VERVE-101, an in vivo adenine base editing therapy targeting hepatic PCSK9 via lipid nanoparticles. At the top dose (0.6 mg/kg, n=4), blood PCSK9 dropped by 84% and LDL-C fell by 55%, with efficacy stable through 180 days. Intermediate dosing (0.45 mg/kg) yielded a 39% LDL-C reduction, while lower doses (<0.3 mg/kg) showed negligible impact. Adverse events included transient infusion reactions in 35.7% of patients and reversible Grade 3 liver transaminase elevations in two patients. One patient experienced a myocardial infarction five weeks post-infusion, adjudicated as unrelated to the treatment. Targeted deep sequencing detected zero off-target editing across 124 candidate loci. While promising, Phase 2 trials must evaluate long-term safety, germline biodistribution, and clinical cardiovascular mortality outcomes.",
+    "word_count": 139,
+    "key_facts_retained": [
+      "PULSE-1 Phase 1 trial with 14 HeFH patients evaluating VERVE-101 base editing",
+      "At 0.6 mg/kg dose: 84% PCSK9 drop and 55% LDL-C reduction stable over 180 days",
+      "Adverse events: 35.7% infusion reactions, 2 Grade 3 ALT/AST elevations, 1 adjudicated unrelated MI",
+      "Zero off-target base editing detected across 124 candidate genomic loci",
+      "Phase 2 required to assess long-term safety, germline biodistribution, and mortality"
+    ]
+  },
+  "ART-02": {
+    "article_id": "ART-02",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "The European Union has enacted the AI Act, establishing a risk-tiered horizontal regulatory framework spanning prohibited, high, specific transparency, and minimal risk tiers. Title VIIIa introduces governance for General-Purpose AI (GPAI) foundation models, dividing them into baseline models and 'systemic risk' models\u2014defined by computational training exceeding 10^25 FLOPs (encompassing GPT-4, Claude 3 Opus, and Gemini 1.5 Pro). Baseline providers must supply technical documentation and copyright summaries, whereas systemic-risk developers must conduct adversarial red-teaming, mitigate systemic threats, report serious cybersecurity incidents, and track energy usage. Violations carry severe fines: up to \u20ac35 million or 7% of global turnover for prohibited practices, and up to \u20ac15 million or 3% for GPAI breaches. Implementation follows a staggered schedule from 6 to 36 months. Critics argue the 10^25 FLOP threshold is arbitrary and burdens European startups, while civil groups laud its human rights protections.",
+    "word_count": 147,
+    "key_facts_retained": [
+      "EU AI Act uses four-tier risk structure: prohibited, high, transparency, minimal",
+      "GPAI models split into baseline and systemic risk (>10^25 FLOPs)",
+      "Systemic obligations include red-teaming, systemic threat mitigation, incident reporting, energy metrics",
+      "Fines up to \u20ac35M/7% for prohibited systems; \u20ac15M/3% for GPAI non-compliance",
+      "Graduated timeline (6 to 36 months); criticism over arbitrary FLOP metric and startup burdens"
+    ]
+  },
+  "ART-03": {
+    "article_id": "ART-03",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "Researchers at the Tokyo Energy Materials Institute developed a solid-state sodium-ion battery that bypasses lithium, cobalt, and nickel supply bottlenecks. The cell couples a densified NASICON ceramic solid electrolyte (Na3.2Zr1.9Ca0.1Si2PO12) with a Prussian blue analogue cathode, a sodium-metal anode, and a 15-nm protective TiO2 buffer layer. The electrolyte delivers high ionic conductivity (3.8 \u00d7 10^-3 S/cm) and suppresses dendrite growth. The prototype achieved a gravimetric energy density of 220 Wh/kg\u2014exceeding commercial LFP batteries\u2014and retained 88.4% capacity after 1,500 cycles at 1C. Thermal tests showed stability up to 310\u00b0C without runaway. Economically, cathode material costs drop by 62% ($24/kWh vs. $63/kWh for NMC-811), and cells can safely discharge to zero volts. However, commercial manufacturing is impeded by high-temperature sintering requirements (1,150\u00b0C) and micro-cracking risks, prompting ongoing research into low-temperature flash-sintering.",
+    "word_count": 133,
+    "key_facts_retained": [
+      "Solid-state sodium battery uses NASICON electrolyte, Prussian blue cathode, and 15-nm TiO2 layer",
+      "Energy density reaches 220 Wh/kg (surpassing LFP) with 88.4% capacity retention after 1,500 cycles",
+      "Thermal runaway avoided up to 310\u00b0C; zero-volt safe discharge eliminates copper collectors",
+      "Cathode material cost falls by 62% ($24/kWh vs $63/kWh for NMC-811)",
+      "Scalability bottleneck: 1,150\u00b0C sintering prone to micro-cracking; flash-sintering under development"
+    ]
+  },
+  "ART-04": {
+    "article_id": "ART-04",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "Despite over $100 billion in Western semiconductor subsidies through the US ($52.7B) and EU (\u20ac43B) CHIPS Acts, advanced 2.5D/3D heterogeneous packaging remains the critical bottleneck for AI chips. Flagship accelerators like Nvidia's H100/B200 and AMD's MI300X rely on multi-die integration and HBM3e linked via TSMC's proprietary CoWoS technology. Over 92% of global CoWoS packaging capacity is concentrated in Taiwan. Even if US front-end fabs produce 4nm/3nm wafers in Arizona by 2025, silicon dies must still be shipped to Taiwan for packaging before final assembly, leaving geopolitical risks unmitigated. The US has allocated $3 billion toward packaging research, with Intel and Amkor expanding domestic facilities, but TSMC's US packaging unit will not operate until 2028. Furthermore, domestic efforts face a projected 67,000-worker technical deficit by 2030 and US construction costs 4.5 times higher than Taiwan's.",
+    "word_count": 138,
+    "key_facts_retained": [
+      "US CHIPS Act ($52.7B) and EU (\u20ac43B) fund front-end fabs, but packaging is true bottleneck",
+      "Over 92% of advanced CoWoS packaging remains concentrated in Taiwan",
+      "Arizona-made 4nm/3nm dies must still travel to Taiwan for packaging, preserving geopolitical chokepoints",
+      "US initiatives include $3B NAPMP funding, Intel/Amkor expansions; TSMC US packaging delayed to 2028",
+      "Headwinds include 67,000 skilled labor deficit by 2030 and 4.5x higher US construction costs"
+    ]
+  },
+  "ART-05": {
+    "article_id": "ART-05",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "Geneticists recovered two-million-year-old environmental DNA (eDNA) from the Kap K\u00f8benhavn Formation in Peary Land, northern Greenland, breaking the previous ancient DNA record of 1.2 million years. Using enzymatic repair and metagenomic shotgun sequencing on 41 sediment samples, researchers reconstructed an early Pleistocene interglacial boreal ecosystem that existed when temperatures were 11\u00b0C to 19\u00b0C warmer than today. Genetic signatures revealed 102 plant genera and 9 animal species. The flora combined arctic vegetation with temperate trees like birch, poplar, and English yew (Taxus baccata), demonstrating remarkable adaptation to polar photoperiods. The fauna included reindeer, hares, geese, and unexpectedly, the extinct mastodon (Mammut), proving mastodons ranged thousands of kilometers further north than previously recognized. Marine eDNA also identified Atlantic horseshoe crabs. The findings demonstrate that species re-assort individually rather than as rigid biomes during rapid warming.",
+    "word_count": 139,
+    "key_facts_retained": [
+      "2-million-year-old eDNA extracted in northern Greenland sets new record for ancient DNA",
+      "Reconstructed ecosystem existed during climate 11\u00b0C to 19\u00b0C warmer than present",
+      "Identified 102 plant genera (including temperate yew Taxus baccata) adapted to polar light regimes",
+      "Discovered mastodon (Mammut) eDNA, expanding its known historical range into northern Greenland",
+      "Demonstrates ecological communities re-assort dynamically rather than shifting as monolithic biomes"
+    ]
+  },
+  "ART-06": {
+    "article_id": "ART-06",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "NIST has released the first post-quantum cryptography (PQC) standards\u2014FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)\u2014to replace classical public-key algorithms (RSA, ECC) vulnerable to Shor's algorithm on quantum computers. ML-KEM and ML-DSA rely on the hardness of lattice-based mathematics (Module-LWE), which resists both classical and quantum attacks. Migration is urgently compelled by 'Harvest Now, Decrypt Later' (HNDL) operations, where adversaries intercept encrypted sensitive communications today to decrypt once cryptanalytically relevant quantum computers arrive in 10-15 years. However, enterprise deployment faces severe friction: lattice keys and ciphertexts are much larger (e.g., ML-KEM-768 requires 1,184 bytes vs. 256 bytes for RSA-2048), causing network packet fragmentation, throughput drops, and buffer overflows. Furthermore, millions of embedded systems, HSMs, and automotive controllers contain non-upgradable hardware accelerators, necessitating costly multi-year physical replacement cycles.",
+    "word_count": 133,
+    "key_facts_retained": [
+      "NIST finalized PQC standards: FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA)",
+      "Lattice-based Module-LWE protects against Shor's algorithm integer factorization threats",
+      "Urgency driven by Harvest Now, Decrypt Later (HNDL) nation-state interception",
+      "Technical friction: larger key sizes (1,184 bytes for ML-KEM-768 vs 256 bytes for RSA) cause fragmentation",
+      "Hardware hurdles: non-upgradable HSMs and embedded systems require complete replacement"
+    ]
+  },
+  "ART-07": {
+    "article_id": "ART-07",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "An empirical study of 500 North American direct-to-consumer subscription platforms revealed that 76.4% utilize deceptive 'dark patterns'\u2014including roach motels, confirmshaming, forced continuity, hidden costs, and false urgency. The study documented acute cancellation asymmetry: while subscription signup took 48 seconds, cancellation required an average of 9.4 minutes across 4.2 confirmation screens. Behavioral experiments with 2,400 participants showed users were 3.8 times less likely to successfully cancel subscriptions with these barriers, causing an average annual consumer loss of $164 per subscriber. In response, the US FTC implemented an updated 'Click-to-Cancel' rule under Section 5, requiring cancellation mechanisms to be as simple and accessible as enrollment, backed by penalties up to $50,120 per violation plus restitution. While industry counsel argues the rule overreaches into legitimate promotional retention, researchers emphasize that clear regulatory guardrails are essential to protect consumer autonomy.",
+    "word_count": 137,
+    "key_facts_retained": [
+      "Study of 500 subscription platforms found 76.4% employ deceptive dark patterns",
+      "Cancellation asymmetry: 48 seconds to enroll vs. 9.4 minutes and 4.2 screens to cancel",
+      "Manipulated users are 3.8x less likely to cancel, losing an average of $164 annually",
+      "FTC Click-to-Cancel rule mandates cancellation must be as easy as enrollment",
+      "Non-compliance faces civil penalties up to $50,120 per violation plus restitution"
+    ]
+  },
+  "ART-08": {
+    "article_id": "ART-08",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "Observations by the James Webb Space Telescope (JWST) have revealed an unexpected abundance of massive, bright galaxies at redshifts exceeding z = 10 (300\u2013450 million years post-Big Bang), challenging standard Lambda-CDM cosmological models. Under Lambda-CDM, hierarchical dark matter halo growth should produce very few massive galaxies so early. Deep surveys like JADES and CEERS identified dozens of luminous systems, including JADES-GS-z14-0 at z = 14.32 with stellar mass estimated at 10^8 to 10^9 solar masses. Reconciling this luminosity under standard assumptions requires near 100% baryonic conversion efficiency, defying known stellar feedback limits. Two primary explanations exist: either these galaxies are exceptionally bright rather than massive\u2014driven by top-heavy Initial Mass Functions of massive Population III stars or obscured AGN accretion\u2014or Lambda-CDM requires modification via non-Gaussian primordial fluctuations or dynamical dark energy. Ongoing NIRSpec spectroscopic surveys seek to resolve this dilemma.",
+    "word_count": 142,
+    "key_facts_retained": [
+      "JWST discovered unexpectedly luminous galaxies at z > 10 (300-450 Myr post-Big Bang)",
+      "Challengers Lambda-CDM hierarchical structure formation expectations",
+      "JADES-GS-z14-0 confirmed at z = 14.32 with 10^8-10^9 solar masses, implying near 100% star formation efficiency",
+      "Explanations: top-heavy IMF of Population III stars, obscured AGN accretion, or revised dark matter physics",
+      "High-resolution NIRSpec spectroscopy is underway to measure metallicity and velocity dispersion"
+    ]
+  },
+  "ART-09": {
+    "article_id": "ART-09",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "Houthi drone and missile attacks on commercial ships in the Bab el-Mandeb strait prompted major shipping alliances to reroute vessels away from the Suez Canal and around the Cape of Good Hope, dropping Suez transit traffic by 67%. The African detour adds 3,500 to 4,000 nautical miles and 10 to 14 days to Shanghai-Rotterdam voyages, forcing carriers to inject 1.2 million TEUs of vessel capacity. Economically, Red Sea insurance premiums rose from 0.05% to over 1.0% of hull value, while Drewry spot freight rates surged 237%, from $1,600 to over $5,400 per 40-foot container. Environmentally, faster cruising speeds and longer routes increased fuel consumption by 35%, generating 13.5 million metric tons of extra maritime CO2 in early 2024. Multinational naval missions have intercepted aerial drones but failed to restore commercial insurance confidence, cementing rerouting into 2025.",
+    "word_count": 139,
+    "key_facts_retained": [
+      "Bab el-Mandeb attacks forced diversion around Cape of Good Hope; Suez traffic dropped 67%",
+      "Detour adds 3,500-4,000 nautical miles and 10-14 days transit between Shanghai and Rotterdam",
+      "Drewry container spot rates surged 237% ($1,600 to $5,400); insurance rose from 0.05% to >1.0%",
+      "Environmental impact: 35% fuel spike and 13.5 million metric tons of extra CO2 in H1 2024",
+      "Naval task forces failed to restore commercial insurance confidence, entrenching rerouting"
+    ]
+  },
+  "ART-10": {
+    "article_id": "ART-10",
+    "author": "Human Expert Evaluator (Gold Standard)",
+    "summary": "A 14-week randomized controlled trial of 1,200 undergraduates across four universities evaluated the pedagogical effects of generative AI writing tools. Students were assigned to three cohorts: unassisted control (Cohort A), AI-augmented with GPT-4 (Cohort B), and Socratic AI tutor (Cohort C). While Cohort B achieved significantly higher marks on weekly take-home essays (88.4% vs. 81.2% for Cohort A and 84.6% for Cohort C), they suffered a 17.3% score collapse (to 71.1%) on unassisted, proctored pen-and-paper examinations evaluating synthesis and critical argumentation. In contrast, Cohort A remained stable (80.4%), and Cohort C achieved the highest retention (83.7%). Eye-tracking revealed 68% of AI-augmented students engaged in 'copy-paste-skim' behavior. Researchers conclude that passive AI cognitive offloading creates an 'illusion of competence' without internal comprehension, whereas Socratic AI interaction that demands deliberate cognitive retrieval strengthens critical thinking.",
+    "word_count": 139,
+    "key_facts_retained": [
+      "RCT with 1,200 students across 4 universities compared unassisted, AI-augmented, and Socratic AI cohorts",
+      "AI-augmented group scored higher on coursework (88.4%) but dropped 17.3% to 71.1% on proctored exams",
+      "Socratic AI group achieved highest unassisted exam retention and critical reasoning (83.7%)",
+      "68% of AI-augmented students engaged in copy-paste-skim behaviors without deep source reading",
+      "Passive AI offloading creates 'illusion of competence'; active Socratic scaffolding preserves retrieval practice"
+    ]
+  }
+}

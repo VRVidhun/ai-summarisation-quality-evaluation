@@ -1,0 +1,68 @@
+[
+  {
+    "prompt_id": "PRM-01",
+    "name": "Baseline Zero-Shot Prompt (Naive Before)",
+    "category": "Baseline",
+    "intended_tools": [
+      "ChatGPT Free",
+      "Gemini Free",
+      "Claude Free"
+    ],
+    "prompt_text": "Summarize the following article in a short paragraph.",
+    "rationale": "Represents the standard, unguided user query. Tests default model behavior, length variability, and vulnerability to conversational fluff or omission of quantitative caveats.",
+    "strengths": "Fast, minimal user effort.",
+    "weaknesses": "Yields loose generalizations ('significant drop', 'over 80%'), frequently drops adverse events, omits statistical bounds, and produces erratic summary lengths."
+  },
+  {
+    "prompt_id": "PRM-02",
+    "name": "Structured Role & Constraint Prompt",
+    "category": "Role-Based / Constraint-Guided",
+    "intended_tools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "prompt_text": "You are an expert scientific communications analyst and research verifier.\nYour task is to produce a rigorous, publication-grade executive summary of the provided text.\n\nStrict Constraints:\n1. Target length: 120 - 150 words.\n2. Structure: Single cohesive paragraph.\n3. Information priority: Core hypothesis/objective, specific quantitative findings, key mechanisms, and critical caveats/adverse findings.\n4. Grounding: Zero extrapolation. Every statistic, name, and causal relation must directly trace to the source text.\n5. Tone: Objective, academic, and dense without unnecessary conversational preamble.\n\nSource text:\n{ARTICLE_TEXT}",
+    "rationale": "Enforces domain role-play, specific word-count boundaries, explicit prioritization of negative/caveat data, and zero-extrapolation constraints.",
+    "strengths": "Eliminates conversational filler ('Here is a summary'), forces balanced inclusion of caveats, and standardizes summary length for comparative scoring.",
+    "weaknesses": "Requires precise adherence; smaller models occasionally struggle with strict simultaneous word-count and multi-variable constraints."
+  },
+  {
+    "prompt_id": "PRM-03",
+    "name": "Chain-of-Density (CoD) Iterative Entity Prompt",
+    "category": "Chain-of-Density (State of the Art)",
+    "intended_tools": [
+      "Claude 3.5 Sonnet",
+      "ChatGPT (GPT-4o)"
+    ],
+    "prompt_text": "Article: {ARTICLE_TEXT}\n\nYou will generate increasingly concise, entity-dense summaries of the above article.\nRepeat the following 2 steps 5 times:\nStep 1. Identify 1-3 informative Entities (\";\" delimited) from the Article which are missing from the previously generated summary.\nStep 2. Write a new, denser summary of identical length (120-140 words) covering every entity and detail marked in previous steps plus the 1-3 new Missing Entities.\n\nGuidelines:\n- Make every word count: rewrite previous sentences to fuse entities concisely rather than just appending clauses.\n- The 5th and final summary must contain maximal information density while remaining completely fluent, grammatical, and factually uncorrupted.\n- Provide the final Step 5 summary as the final output.",
+    "rationale": "Based on the landmark Adams et al. (2023) Chain-of-Density paper. Maximizes token efficiency, increases ROUGE recall, and packs high-density entity graphs into compact text.",
+    "strengths": "Produces the highest ROUGE-2 and ROUGE-L scores, compresses complex multi-variable studies without loss of core nuance, and minimizes informational fluff.",
+    "weaknesses": "Higher computational token cost; if taken past Step 5, readability can decline into robotic telegraphic syntax."
+  },
+  {
+    "prompt_id": "PRM-04",
+    "name": "NotebookLM Source-Grounded Synthesis Prompt",
+    "category": "Source-Grounded Research",
+    "intended_tools": [
+      "Google NotebookLM",
+      "Colab LLM"
+    ],
+    "prompt_text": "Analyze the uploaded source document and provide a structured synthesis addressing:\n1. Primary thesis and experimental/empirical setup.\n2. Verified quantitative results (cite exact metrics and sample sizes).\n3. Reported anomalies, limitations, or adverse events.\n4. Policy, industry, or scientific implications.\n\nRule: Restrict all statements strictly to facts stated directly in the uploaded source. Do not infer, speculate, or introduce external training data.",
+    "rationale": "Leverages NotebookLM's grounded retrieval-augmented architecture (RAG) to ensure 100% citation traceability and completely suppress hallucination.",
+    "strengths": "Virtually zero hallucination rate; perfect traceability back to source paragraph chunks.",
+    "weaknesses": "Slightly less fluid paragraph cohesion; tends to produce bulleted lists rather than an organic narrative."
+  },
+  {
+    "prompt_id": "PRM-05",
+    "name": "Automated Fact-Checking & Claim Verification Prompt",
+    "category": "Verification & Responsible AI",
+    "intended_tools": [
+      "GPT-4o / Claude / Colab Script"
+    ],
+    "prompt_text": "You are an adversarial fact-checking system. Compare the CANDIDATE_SUMMARY against the ORIGINAL_SOURCE.\n\nTasks:\n1. Extract every distinct factual assertion from CANDIDATE_SUMMARY.\n2. For each assertion, locate the supporting sentence in ORIGINAL_SOURCE.\n3. Classify each assertion as:\n   - [VERIFIED]: Supported 100% by text.\n   - [PARTIAL]: Partially supported or generalized.\n   - [FALSIFIED]: Contradicts original text (numbers, direction of effect, or actors).\n   - [UNGROUNDED/EXTRAPOLATION]: Information not present anywhere in source.\n4. Provide a total Factual Integrity Index (0-100%).\n\nORIGINAL_SOURCE: {ARTICLE_TEXT}\nCANDIDATE_SUMMARY: {SUMMARY_TEXT}",
+    "rationale": "Implements an automated claim-level verification audit that quantifies hallucination and faithfulness with verifiable evidence chains.",
+    "strengths": "Removes human subjective bias from verification; isolates exact hallucinated phrases.",
+    "weaknesses": "Sensitive to subtle semantic paraphrasing if the verifier model misinterprets valid synonyms."
+  }
+]
